@@ -2,7 +2,6 @@ import "./../style/Footer.css";
 import { Link } from "react-router-dom";
 import instagram from "../pictures/instagram.png";
 import facebook from "../pictures/facebook.png";
-import strava from "../pictures/strava.png";
 
 export default function Footer() {
     return(
@@ -16,16 +15,25 @@ export default function Footer() {
                     professional bakery and coffee brand and 20+ employees.
                 </p>
                 <div>
-                    <a href="#" className="instagram">
-                        <img src={instagram} alt="Instagram" className="instagram-photo" />
+                    <a
+                    href="https://www.instagram.com/davidbreadhead/?hl=da"
+                    className="instagram"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                    <img src={instagram} alt="Instagram" className="instagram-photo" />
                     </a>
-                    <a href="#" className="facebook">
-                        <img src={facebook} alt="Facebook" className="facebook-photo" />
-                    </a>
-                    <a href="#" className="strava">
-                        <img src={strava} alt="Strava" className="strava-photo" />
+
+                    <a
+                    href="https://www.facebook.com/DavidBreadHead"
+                    className="facebook"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                    <img src={facebook} alt="Facebook" className="facebook-photo" />
                     </a>
                 </div>
+
             </div>
             <div className="footer-right">
                 <h4>Contact</h4>
