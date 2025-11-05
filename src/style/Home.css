@@ -1,0 +1,40 @@
+/* global reset, hvis ikke sat i forvejen */
+html, body, #root { height: 100%; }
+body { margin: 0; }
+
+.home-landing {
+  position: relative;
+  min-height: 100dvh;     /* fylder hele viewport-højden */
+  background: #efe9dd;    /* fallback hvis billede loader sent */
+  overflow: hidden;
+}
+
+/* billedet fylder hele skærmen – helt til kanterne */
+.hero-full {
+  position: absolute;
+  inset: 0;
+  width: 100vw;
+  height: 100dvh;
+  object-fit: cover;      /* beskær pænt, bevar proportioner */
+  display: block;
+  border: 0;
+}
+
+/* knappen ligger ovenpå billedet i bunden, centreret */
+.enter-btn {
+  position: absolute;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
+  z-index: 2;
+  border: none;
+  background: #2e6b48;
+  color: #fff;
+  font-size: 1.6rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(0,0,0,.18);
+}
+.enter-btn:hover { transform: translateX(-50%) translateY(1px); opacity: .95; }

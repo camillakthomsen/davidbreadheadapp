@@ -1,0 +1,54 @@
+.coffee-page {
+  background-color: #f6f3eb;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+/* Sektionen */
+.coffee-section {
+  max-width: 800px;
+  margin: 0 auto 4rem auto;
+}
+
+/* Billedet */
+.coffee-image {
+  width: 400px;
+  height: auto;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto 2rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Overskrift */
+.coffee-title {
+  font-family: "Playfair Display", serif;
+  color: #1f6a46;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+/* Brødtekst */
+.coffee-text {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #222;
+}
+
+/* Responsiv */
+@media (max-width: 768px) {
+  .coffee-image {
+    width: 90%;
+  }
+
+  .coffee-title {
+    font-size: 1.5rem;
+  }
+
+  .coffee-text {
+    font-size: 0.9rem;
+  }
+}

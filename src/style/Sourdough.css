@@ -1,0 +1,59 @@
+
+/* Boksen omkring hele info-delen */
+.info-box {
+  border: 1.5px solid rgba(0, 0, 0, 0.25); /* den tynde ramme */
+  border-radius: 12px;                     /* let afrundede hjørner */
+  background-color: #f9f5ec;               /* let beige som resten af siden */
+  padding: 1rem 1.25rem;                   /* luft indeni */
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: fit-content;                      /* gør boksen kun så bred som indholdet */
+  box-shadow: 0 2px 6px rgba(16, 15, 15, 0.644);
+}
+
+/* "info"-overskrift */
+.info-title {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 800;
+  color: #d86c35;
+  font-size: 1.4rem;
+}
+
+/* Tekst og pil ved siden af hinanden */
+.info-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* Pilen */
+.enter-btn.small {
+  position: static;
+  transform: none;
+  width: 2.4rem;
+  height: 2.4rem;
+  font-size: 1.3rem;
+  border-radius: 999px;
+  background: #2e6b48;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.enter-btn.small:hover {
+  transform: translateY(1px);
+  opacity: 0.95;
+}
+
+.info-content p {
+  margin: 0;
+  line-height: 1.55;
+}

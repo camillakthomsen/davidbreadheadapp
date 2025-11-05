@@ -13,6 +13,22 @@
   }
 }
 
+@font-face {
+  font-family: "Playfair Display";
+  src: url("./fonts/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;       /* dækker hele vægt-spændet */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("./fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +51,68 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  background: #2e6b48;
+  color: #f6f3eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .75rem 1rem;
+}
+
+.nav-left, .nav-center, .nav-right {
+  flex: 1;
+}
+
+.nav-left { text-align: left; }
+.nav-center { 
+  text-align: center; 
+  font-family: "Playfair Display", serif;
+  font-weight: 1200;
+  font-size: 30px;
+}
+.nav-right { text-align: right; }
+
+.location-icon {
+  width: 26px;   /* du kan justere størrelsen her */
+}
+
+.bread-icon {
+  width: 26px;   /* du kan justere størrelsen her */
+}
+
+.running-icon{
+  width: 26px;
+}
+
+.coffee-icon{
+  width: 26px;
+}
+
+.nav a {
+  color: #f6f3eb;
+  text-decoration: none;
+  margin: 0 .5rem;
+}
+.nav a:hover { text-decoration: underline; }
+
+.cart-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.cart-icon {
+  width: 26px;   /* du kan justere størrelsen her */
+  height: 26px;
+  object-fit: contain;
+  filter: brightness(0) invert(1); /* gør ikonet hvidt, hvis det fx er sort */
+  transition: transform 0.2s ease;
+}
+
+.cart-icon:hover {
+  transform: scale(1.1);
 }
