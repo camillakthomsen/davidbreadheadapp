@@ -95,6 +95,7 @@ font-family: "Playfair Display", serif;
   gap: 0.5rem;                 /* lille afstand mellem tekst og ikon */
   transition: background-color 0.2s ease;
   width: 2.2cm;
+  text-decoration: none;
 }
 
 .buttonsurdej {
@@ -111,5 +112,6 @@ font-family: "Playfair Display", serif;
   gap: 0.5rem;                 /* lille afstand mellem tekst og ikon */
   transition: background-color 0.2s ease;
   width: 2.6cm;
+  text-decoration: none;
 }
 

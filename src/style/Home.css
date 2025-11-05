@@ -30,9 +30,9 @@ body { margin: 0; }
   border: none;
   background: #2e6b48;
   color: #fff;
+  width: 3.5rem;
+  height: 3.5rem;
   font-size: 1.6rem;
-  width: 3.2rem;
-  height: 3.2rem;
   border-radius: 999px;
   cursor: pointer;
   box-shadow: 0 6px 16px rgba(0,0,0,.18);

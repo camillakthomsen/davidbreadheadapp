@@ -35,7 +35,7 @@ export default function Home() {
         aria-label="Gå til forsiden"
         title="Gå til forsiden"
       >
-        ↓
+        ⬇
       </button>
     </div>
   );

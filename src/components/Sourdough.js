@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Surdejskursus from "../pictures/surdejskursus.png";
 import Footer from "../components/Footer";
+import "../style/Sourdough.css";
 
 export default function Sourdough() {
   const infoTexts = [
