@@ -1,102 +1,71 @@
 .running-page {
-  background: #f6f3eb;
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+.running-info img{
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+/* HERO */
+.running-hero {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0 1.5rem;
+}
+
+/* INTRO */
+.running-intro {
+  max-width: 800px;
+  margin: 0 auto 2.5rem;
+  padding: 0 1.5rem;
+  text-align: left;
+}
+
+.running-intro h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.4rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #197c52;           /* samme grøn som logoet */
+  margin-bottom: 1rem;
+}
+
+.running-intro p {
   font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
   color: #222;
 }
 
-/* Hero */
-.run-hero {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 1rem 1rem 0;
-}
-.run-hero-img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 6px;
-  box-shadow: 0 4px 16px rgba(0,0,0,.08);
+/* INFO-KORT */
+.running-info {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  padding: 0 1.5rem;
 }
 
-/* Info */
-.run-info {
-  max-width: 1100px;
-  margin: 1.5rem auto 2.25rem;
-  padding: 0 1rem;
+.running-card {
+  background-color: #fff7e9;
+  border-radius: 10px;
+  padding: 1rem 1.75rem;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04);
 }
-.run-title {
+
+.running-card h2 {
   font-family: "Playfair Display", serif;
-  color: #1f6a46;
-  font-size: 1.8rem;
-  margin: 0 0 .75rem 0;
-}
-.fact-title {
-  font-size: .85rem;
-  letter-spacing: .4px;
-  margin: .5rem 0;
-  font-weight: 700;
-}
-.run-list {
-  list-style: none;
-  padding: 0;
-  margin: .75rem 0 0 0;
-}
-.run-list li {
-  margin: .15rem 0;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #d86c35;          /* din orange */
+  margin: 0 0 0.75rem;
 }
 
-/* Instagram-række */
-.run-insta {
-  max-width: 1100px;
-  margin: 0 auto 2.5rem;
-  padding: 0 1rem;
-}
-.run-sub {
-  text-align: center;
-  font-family: "Playfair Display", serif;
-  color: #d86c35;
-  font-style: italic;
-  font-size: 1.15rem;
-  margin: 1rem 0 .75rem 0;
-}
-
-/* Vandret scroll + snap */
-.insta-row {
-  display: flex;
-  gap: 1rem;
-  overflow-x: auto;
-  padding: .25rem 0 0.5rem;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-}
-.insta-row::-webkit-scrollbar { height: 8px; }
-.insta-row::-webkit-scrollbar-thumb {
-  background: rgba(0,0,0,.2);
-  border-radius: 999px;
-}
-.insta-row::-webkit-scrollbar-track { background: transparent; }
-
-.insta-item {
-  flex: 0 0 auto;
-  width: 280px;
-  height: 280px;
-  scroll-snap-align: start;
-  border-radius: 6px;
-  overflow: hidden;
-  box-shadow: 0 3px 12px rgba(0,0,0,.08);
-}
-.insta-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-/* Responsiv */
-@media (max-width: 720px) {
-  .run-title { font-size: 1.5rem; }
-  .insta-item { width: 220px; height: 220px; }
-}
-@media (max-width: 480px) {
-  .insta-item { width: 180px; height: 180px; }
+.running-card p {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin: 0;
 }

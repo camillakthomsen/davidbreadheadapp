@@ -1,41 +1,64 @@
-import { Link, NavLink } from "react-router-dom";
+// NavBar.js
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import basket from "../pictures/basket.png";
-import location from "../pictures/location.png";
-import bread from "../pictures/bread.png";
-import running from "../pictures/running.png";
-import coffee from "../pictures/coffee.png";
+import StaggeredMenu from "../components/StaggeredMenu";
 import "./../App.css";
 
 export default function NavBar() {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () => setIsOpen(p => !p);
+  const closeMenu = () => setIsOpen(false);
+
+  const items = [
+    { label: "Home", link: "/" },
+    { label: "Menu", link: "/delivery" },
+    { label: "Coffee", link: "/coffee" },
+    { label: "Events", link: "/events" },
+    { label: "Running", link: "/running" },
+    { label: "Sourdough", link: "/sourdough" },
+  ];
+
   return (
     <header className="nav">
-  <div className="nav-left">
-        <Link to="/sourdough" className="bread-icon">
-          <img src={bread} alt="Bread" className="bread-icon" />
-        </Link>
+      {/* Venstre: burger (synlig altid) */}
+      <div className="nav-left">
+        <button
+          className="burger-btn"
+          onClick={toggleMenu}
+          aria-label={isOpen ? "Luk menu" : "Åbn menu"}
+          style={{ zIndex: 1100 }}   // over overlay
+        >
+          {isOpen ? <span className="burger-close"></span> : <>
+            <span className="burger-line" />
+            <span className="burger-line" />
+            <span className="burger-line" />
+          </>}
+        </button>
+      </div>
 
-        <Link to="/location" className="location-icon">
-          <img src={location} alt="Location" className="location-icon" />
-        </Link>
+      {/* Midten: logo / navn */}
+      <div className="nav-center">
+        <Link to="/homepage" className="nav-logo">DavidBreadHead</Link>
+      </div>
 
-        <Link to="/running" className="running-icon">
-          <img src={running} alt="Running" className="running-icon" />
-        </Link>
-
-        <Link to="/coffee" className="coffee-icon">
-          <img src={coffee} alt="Coffee" className="coffee-icon" />
+      {/* Højre: kurv */}
+      <div className="nav-right">
+        <Link to="/delivery" className="cart-icon">
+          <img src={basket} alt="Indkøbskurv" />
         </Link>
       </div>
 
-  <div className="nav-center">
-    <Link to="/homepage">DavidBreadHead</Link>
-  </div>
-
-  <div className="nav-right">
-    <Link to="/delivery" className="cart-icon">
-          <img src={basket} alt="Indkøbskurv" className="cart-icon" />
-    </Link>
-  </div>
-</header>
+      {/* VENSTRE drawer */}
+      <StaggeredMenu
+        isOpen={isOpen}
+        onClose={closeMenu}
+        position="left"
+        items={items}
+        displaySocials={false}
+        colors={["#fff7e9", "#e9d5b4"]}
+        accentColor="#b0451f"
+      />
+    </header>
   );
 }

@@ -1,5 +1,5 @@
 .location {
-  background: #f6f3eb;
+  background: #ffffff;
   padding: 2.5rem 1rem;
 }
 
@@ -35,10 +35,10 @@
 /* Overskrifter */
 .loc-title {
   font-family: "Playfair Display", serif;
-  font-size: 2rem;
-  line-height: 1.2;
-  color: #1f6a46; /* grøn */
-  margin: .25rem 0 1rem 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #4a2b1a;
+  margin: 0;
 }
 
 .loc-title .slash {

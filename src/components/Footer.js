@@ -38,6 +38,7 @@ export default function Footer() {
             <div className="footer-right">
                 <h4>Contact</h4>
                 <Link to="/location">Location</Link>
+                <Link to="/events">Events</Link>
                 <Link to="/contact">Contact</Link>
                 <Link to="/jobs">Jobs</Link>
             </div>

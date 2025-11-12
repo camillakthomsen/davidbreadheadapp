@@ -1,61 +1,41 @@
-import hero from "../pictures/runningfrontpage.png";
-import r1 from "../pictures/running1.png";
-import r2 from "../pictures/running2.png";
-import r3 from "../pictures/running3.png";
-import r4 from "../pictures/running4.png";
-import r5 from "../pictures/running5.png";
-
+import instagram from "../pictures/instagram.png";
 import Footer from "../components/Footer";
 import "../style/Running.css";
 
 export default function Running() {
-  const gallery = [r1, r2, r3, r4, r5];
-
   return (
     <main className="running-page">
-      {/* Hero */}
-      <section className="run-hero">
-        <img src={hero} alt="BreadHead Running Club" className="run-hero-img" />
+      <section className="running-intro">
+        <h1>BreadHead Running Club</h1>
+        <p>
+          Hver torsdag mødes vi foran bageriet og løber en rolig tur sammen
+          gennem byen. Der er plads til alle!
+        </p>
       </section>
 
-      {/* Info */}
-      <section className="run-info">
-        <h1 className="run-title">BreadHeadRunningClub</h1>
-
-        <div className="run-facts">
-          <p className="fact-title">TORSDAGS TØNS</p>
+      {/* Info-boks – Torsdags Tons */}
+      <section className="running-info">
+        <div className="running-card">
+          <h2>Torsdags Tons</h2>
           <p>
-            Hver torsdag er vi mellem 80–130 løbere der mødes og løber sammen i
-            stille og roligt tempo. At løbe sammen er sjovt og nemmere! Vi løber
-            sammen hver torsdag fra bageriet og i samlet flok løber vi
-            forskellige ruter i højt humør.
+            <strong>Tid:</strong> 17.30<br />
+            <strong>Hvor:</strong> DavidBreadHead, Ny Munkegade 4B<br />
+            <strong>Pace:</strong> ca. 5:30–5:40 min/km<br />
+            <strong>Distance:</strong> 6–7 km<br />
+            Hver torsdag – ingen tilmelding, bare mød op.
           </p>
-
-          <ul className="run-list">
-            <li><strong>Tid:</strong> 17:30</li>
-            <li><strong>Hvor:</strong> DavidBreadHead, Ny Munkegade 4b</li>
-            <li><strong>Pace:</strong> 5:30–5:40</li>
-            <li><strong>KM:</strong> 6–7</li>
-            <li><strong>Hver torsdag – ingen undtagelser</strong></li>
-          </ul>
+          <a
+                    href="https://www.instagram.com/breadheadrunningclub/?hl=da"
+                    className="instagramrunning"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                    <img src={instagram} alt="Instagram" className="instagram-photo" />
+          </a>
         </div>
       </section>
 
-      {/* Instagram-lignende række (vandret scroll) */}
-      <section className="run-insta">
-        <h2 className="run-sub">breadheadrunning runners</h2>
-
-        <div className="insta-row" role="list">
-          {gallery.map((src, i) => (
-            <div className="insta-item" role="listitem" key={i}>
-              <img src={src} alt={`Running ${i + 1}`} />
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <Footer />
+    <Footer/>
     </main>
   );
 }
-

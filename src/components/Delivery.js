@@ -12,13 +12,12 @@ export default function Delivery() {
     <main className="delivery-page">
       <section className="delivery-intro">
         <h1 className="delivery-title">Bestillinger</h1>
-        <p className="delivery-note">
-          <strong>OBS:</strong> Vi tager kun imod bestillinger til større arrangementer.
-        </p>
-        <p className="delivery-mail">
-          Skriv til:{" "}
-          <a href="mailto:DavidBreadHead@gmail.com">DavidBreadHead@gmail.com</a>
-        </p>
+        <div className="delivery-apply">
+          <p>Bestillinger til større arrengementer bedes sendes til:</p>
+          <a href="mailto:davidbreadhead@gmail.com" className="jobs-email">
+            davidbreadhead@gmail.com
+          </a>
+        </div>
       </section>
 
       <section className="delivery-section">

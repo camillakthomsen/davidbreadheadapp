@@ -1,61 +1,152 @@
-
-/* Boksen omkring hele info-delen */
-.info-box {
-  border: 0.2px solid #d86b3532;
-  border-radius: 12px;
-  background-color: #f9f5ec;
-  padding: 1.2rem 1.6rem;
-  box-shadow: 0 0.2px 0.5px rgba(16, 15, 15, 0.644);
-  max-width: 800px;
+.sourdough-page {
+  background-color: #ffffff;
+  min-height: 100vh;
 }
 
+/* Layout: billede + tekst */
+.sourdough-hero {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0rem 1.5rem 3rem;
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
 
-/* "info"-overskrift */
-.info-title {
+.sourdough-left img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.sourdough-right {
+  flex: 1;
+  font-family: "Poppins", sans-serif;
+}
+
+.sourdough-right h1 {
   font-family: "Playfair Display", serif;
-  font-style: italic;
-  font-weight: 800;
-  color: #d86c35;
-  font-size: 1.5rem;
-}
-
-/* Tekst og pil ved siden af hinanden */
-.info-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-/* Pilen */
-.enter-btn.small {
-  position: static !important;         /* tving den ind i layoutet */
-  width: 3.5rem;
-  height: 3.5rem;
-  font-size: 1.6rem;
-  border-radius: 50%;                  /* helt rund */
-  background: #2e6b48;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 1.5rem;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
-  transition: box-shadow 0.15s ease;
-}
-
-
-.info-box .enter-btn.small:hover {
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
-}
-
-.info-content p {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #197c52;
   margin: 0;
-  line-height: 1.55;
-  max-width: 450px;
 }
 
+.sourdough-right p {
+  margin: 0 0 0.75rem;
+  line-height: 1.6;
+  color: #222;
+}
 
+/* Næste kursus */
+.sourdough-next h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #d86c35;
+  margin: 1.8rem 0 0.75rem;
+}
+
+/* Kort med dato – inspireret af dine events */
+.course-card {
+  display: flex;
+  align-items: center;
+  background-color: #fff7e9;
+  border-radius: 16px;
+  padding: 1rem 1.4rem;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04);
+  margin-bottom: 1.5rem;
+}
+
+.course-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 70px;
+  padding-right: 1rem;
+  margin-right: 1rem;
+  border-right: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.course-month {
+  font-family: "Playfair Display", serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #d26a2a;
+}
+
+.course-day {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #b0451f;
+  line-height: 1;
+}
+
+.course-main {
+  flex: 1;
+}
+
+.course-title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.1rem;
+  margin: 0 0 0.25rem;
+  color: #4a2b1a;
+}
+
+.course-details,
+.course-price {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Lille liste med “det får du” */
+.sourdough-list {
+  margin: 0 0 1.5rem;
+  padding-left: 1.1rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Knapper */
+.sourdough-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.primary-btn,
+.secondary-btn {
+  display: inline-block;
+  padding: 0.7rem 1.6rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.secondary-btn {
+  background-color: #d86c35;
+  color: #fff;
+}
+
+.secondary-btn:hover {
+  background-color: #c25f2f;
+}
+
+/* Mobil */
+@media (max-width: 768px) {
+  .sourdough-hero {
+    flex-direction: column;
+  }
+
+  .sourdough-left img {
+    max-width: none;
+  }
+}

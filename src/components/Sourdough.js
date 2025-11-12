@@ -1,48 +1,59 @@
-import { useState } from "react";
 import Surdejskursus from "../pictures/surdejskursus.png";
 import Footer from "../components/Footer";
 import "../style/Sourdough.css";
 
 export default function Sourdough() {
-  const infoTexts = [
-    "Der er både teori og praktisk læring. Du kommer til at lave dit eget surdejsbrød i løbet af aftenen og får surdej – samt rå croissanter med hjem, som du kan bage af.",
-    "Vi gennemgår alt teorien bag surdejsbagning: fra korntyper, vandforhold og foldeteknik til autolyse og bagning.",
-    "Der vil være let aftensmad bestående af surdejsbrød, ost, pølse og små delikatesser."
-  ];
-
-  const [ix, setIx] = useState(0);
-  const nextInfo = () => setIx((i) => (i + 1) % infoTexts.length);
-
   return (
-    <main className="homepage">
-      <section className="surdejskursus">
-        <div className="surdej-left">
-          <img src={Surdejskursus} alt="Surdejskursus" className="surdej-img" />
+    <main className="sourdough-page">
+      <section className="sourdough-hero">
+        <div className="sourdough-left">
+          <img
+            src={Surdejskursus}
+            alt="Surdejskursus"
+            className="surdej-img"
+          />
         </div>
 
-        <div className="surdej-right">
+        <div className="sourdough-right">
           <h1>surdejskursus</h1>
-          <p>
-            Kunne du tænke dig at mestre det perfekte surdejsbrød? – Eller rulle
-            den perfekte sprøde croissant? Så er et surdejskursus nok for dig!
-          </p>
-          <p>
-            Vi afholder løbende vores surdejskurser 1–2 gange om måneden.
-            Datoerne vil blive lagt op her på siden og på Instagram, som regel
-            måneden inden. Læs mere om surdejskurset.
-          </p>
 
-          {/* INFO-BOKS */}
-          <div className="info-box">
-            <div className="info-header">
-              <span className="info-title">info</span>
-            </div>
-            <div className="info-content">
-              <p>{infoTexts[ix]}</p>
-              <button className="enter-btn small right-arrow" onClick={nextInfo}>
-                ➜
-              </button>
-            </div>
+          {/* NÆSTE KURSUS */}
+          <section className="sourdough-next">
+            <h2>Næste surdejskursus</h2>
+
+            <article className="course-card">
+              <div className="course-date">
+                <span className="course-month">NOV</span>
+                <span className="course-day">24</span>
+              </div>
+              <div className="course-main">
+                <p className="course-title">Surdejskursus i bageriet (ledige pladser)</p>
+                <p className="course-details">
+                  Kl. 17.00–20.30 · Ny Munkegade 4B, Aarhus C
+                </p>
+                <p className="course-price">
+                  Pris: 1.100 kr. · Plads til 8–10 deltagere
+                </p>
+              </div>
+            </article>
+          </section>
+
+          {/* KORT “DET FÅR DU” */}
+          <ul className="sourdough-list">
+            <li>Hævekurv, egen surdej og et friskbagt brød med hjem</li>
+            <li>Dej og rå croissanter, du selv bager færdig</li>
+            <li>Opskrift og trin-for-trin gennemgang under kurset</li>
+          </ul>
+
+          {/* KNAPPER */}
+          <div className="sourdough-actions">
+            <a
+              href="/Opskrift-Davidbreadhead.pdf"
+              download
+              className="secondary-btn"
+            >
+              Download opskrift
+            </a>
           </div>
         </div>
       </section>

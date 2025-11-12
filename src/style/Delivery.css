@@ -1,5 +1,5 @@
 .delivery-page {
-  background: #f6f3eb;
+  background: #ffffff;
   padding: 2.2rem 1rem 3rem;
   font-family: "Poppins", sans-serif;
 }
@@ -17,17 +17,16 @@
   margin: 0 0 .5rem 0;
 }
 
-.delivery-note,
-.delivery-mail {
-  margin: 0;
-  font-size: 0.95rem;
+.delivery-apply {
+  text-align: left;
+  margin-top: 3rem;
+  font-size: 1rem;
+  color: #3a281e;
 }
 
-.delivery-mail a {
-  color: #1f6a46;
-  text-decoration: none;
+.delivery-apply p {
+  margin: 0 0 0.35rem 0;
 }
-.delivery-mail a:hover { text-decoration: underline; }
 
 /* Sektioner */
 .delivery-section {

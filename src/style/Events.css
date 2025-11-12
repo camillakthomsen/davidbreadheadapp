@@ -1,0 +1,111 @@
+/* Sektion */
+
+.events {
+  background-color: #ffffff; /* varm beige som resten af siden */
+  padding: 0rem 1.5rem;
+}
+
+.events-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.events-inner h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #197c52;
+  margin: 0;
+}
+
+/* run-title har du allerede – vi lader den bare styre overskriften */
+
+/* Liste med kort */
+
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Selve kortet */
+
+.event-card {
+  display: flex;
+  align-items: stretch;
+  background-color: #fff7e9;
+  border-radius: 18px;
+  padding: 1.2rem 1.8rem;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04);
+}
+
+/* Dato-blok til venstre */
+
+.event-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 80px;
+  padding-right: 1.2rem;
+  margin-right: 1.2rem;
+  border-right: 1px solid rgba(0, 0, 0, 0.08); /* den tynde lodrette streg */
+}
+
+.event-month {
+  font-family: "Playfair Display", serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #d26a2a; /* rustrød */
+}
+
+.event-day {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #b0451f;
+  line-height: 1;
+}
+
+/* Tekst til højre */
+
+.event-main {
+  display: flex;
+  align-items: center;
+}
+
+.event-title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #4a2b1a;
+  margin: 0;
+}
+/* Hover (valgfrit) */
+
+.event-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+  transition: transform 0.15s ease-out, box-shadow 0.15s ease-out;
+}
+
+/* Responsiv */
+
+@media (max-width: 600px) {
+  .event-card {
+    padding: 1rem 1.2rem;
+  }
+
+  .event-date {
+    min-width: 70px;
+    padding-right: 1rem;
+    margin-right: 1rem;
+  }
+
+  .event-title {
+    font-size: 1.3rem;
+  }
+}
