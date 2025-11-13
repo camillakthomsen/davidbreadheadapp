@@ -1,20 +1,7 @@
-import bread1 from "../pictures/bread1.png";
-import bread2 from "../pictures/bread2.png";
-import bread3 from "../pictures/bread3.png";
-import pasteri1 from "../pictures/pasteri1.png";
-import pasteri2 from "../pictures/pasteri2.png";
-import pasteri3 from "../pictures/pasteri3.png";
+
 import "../style/Delivery.css";
 
 export default function Delivery() {
-  const items = [
-  { src: bread1, caption: "Aros loaf", price: "55,-" },
-  { src: bread2, caption: "Sesam loaf", price: "55,-" },
-  { src: bread3, caption: "Rugbrød", price: "35,-" },
-  { src: pasteri1, caption: "Croissant", price: "35,-" },
-  { src: pasteri2, caption: "Pain au chocolat", price: "38,-" },
-  { src: pasteri3, caption: "Seasonal pastry", price: "42,-" },
-];
 
   return (
     <main className="delivery-page">
