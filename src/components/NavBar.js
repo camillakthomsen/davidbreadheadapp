@@ -37,11 +37,6 @@ export default function NavBar() {
         </button>
       </div>
 
-      {/* Midten: logo / navn */}
-      <div className="nav-center">
-        <Link to="/homepage" className="nav-logo">DavidBreadHead</Link>
-      </div>
-
       {/* Højre: kurv */}
       <div className="nav-right">
         <Link to="/delivery" className="cart-icon">

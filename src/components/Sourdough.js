@@ -27,7 +27,7 @@ export default function Sourdough() {
                 <span className="course-day">24</span>
               </div>
               <div className="course-main">
-                <p className="course-title">Surdejskursus i bageriet (ledige pladser)</p>
+                <p className="course-title">Surdejskursus i bageriet (udsolgt)</p>
                 <p className="course-details">
                   Kl. 17.00–20.30 · Ny Munkegade 4B, Aarhus C
                 </p>

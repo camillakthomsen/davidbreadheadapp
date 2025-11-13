@@ -8,13 +8,23 @@ export default function Running() {
       <section className="running-intro">
         <h1>BreadHead Running Club</h1>
         <p>
-          Hver torsdag mødes vi foran bageriet og løber en rolig tur sammen
+          Hver tirsdag og torsdag mødes vi foran bageriet og løber en rolig tur sammen
           gennem byen. Der er plads til alle!
         </p>
       </section>
 
       {/* Info-boks – Torsdags Tons */}
       <section className="running-info">
+        <div className="running-card">
+          <h2>Tirsdags morgenløb</h2>
+          <p>
+            <strong>Tid:</strong> 06.45<br />
+            <strong>Hvor:</strong> DavidBreadHead, Ny Munkegade 4B<br />
+            <strong>Pace:</strong> ca. 5:30–5:40 min/km<br />
+            <strong>Distance:</strong> 6–7 km<br />
+          </p>
+        </div>
+        <p></p>
         <div className="running-card">
           <h2>Torsdags Tons</h2>
           <p>

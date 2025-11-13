@@ -1,72 +1,144 @@
-.delivery-page {
-  background: #ffffff;
-  padding: 2.2rem 1rem 3rem;
-  font-family: "Poppins", sans-serif;
+/* Font til tavlen */
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand:wght@400&display=swap');
+
+.delivery-page { background:#fff; }
+
+/* ===== MENU BOARD ===== */
+.menu-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 0rem 0rem 1rem; /* <-- ændr til fx - lidt negativ margin */
+  margin-top: -3rem; /* trækker den tættere på navbaren */
 }
 
-/* Intro */
-.delivery-intro {
-  max-width: 1100px;
-  margin: 0 auto 1.25rem;
-}
-
-.delivery-title {
-  font-family: "Playfair Display", serif;
-  color: #1f6a46;               /* grøn */
-  font-size: 2rem;
-  margin: 0 0 .5rem 0;
-}
-
-.delivery-apply {
-  text-align: left;
-  margin-top: 3rem;
-  font-size: 1rem;
-  color: #3a281e;
-}
-
-.delivery-apply p {
-  margin: 0 0 0.35rem 0;
-}
-
-/* Sektioner */
-.delivery-section {
-  max-width: 900px; /* gør hele sektionen smallere */
-  margin: 2rem auto 4rem auto; /* lidt mere luft nedenunder */
-}
-
-
-.delivery-subtitle {
-  text-align: center;
-  font-family: "Playfair Display", serif;
-  color: #d86c35;               /* orange */
-  font-size: 1.3rem;
-  font-weight: 700;
-  font-style: italic;
-  margin: 0 0 1rem 0;
-}
-
-/* Galleri – tre kolonner, uden afrundede hjørner */
-.delivery-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem; /* øget afstand mellem billederne */
-}
-
-
-.delivery-img {
+.menu-board {
   width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;            /* udfyld rammen pænt */
-  /* ingen border-radius – “ikke buede hjørner” */
-  border-radius: 0;
-  box-shadow: 0 3px 12px rgba(0,0,0,.06);
+  max-width: 650px;          /* var 820px → lidt smallere */
+  border: 8px solid #d8b27b; /* var 10px → lidt tyndere */
+  border-radius: 6px;        /* også lidt mindre afrunding */
+  background:
+    repeating-linear-gradient(to bottom,
+      #141414 0 30px, #0f0f0f 38px 40px);
+  box-shadow: 0 6px 18px rgba(0,0,0,.22);
 }
 
-/* Responsiv */
-@media (max-width: 980px) {
-  .delivery-grid { grid-template-columns: repeat(2, 1fr); }
+.menu-title {
+  font-family:"Patrick Hand", sans-serif;
+  color:#fff; letter-spacing:.2rem;
+  text-align:center; padding:.6rem 1rem 0; margin:0;
+  font-size:1.5rem;
 }
-@media (max-width: 600px) {
-  .delivery-grid { grid-template-columns: 1fr; }
+.menu-list {
+  list-style:none; margin:.5rem 0 0;
+  padding:0rem 1.2rem 1rem;
+  display:grid; gap:8px 40px; grid-template-columns:1fr 1fr;
+}
+.menu-list .sep { grid-column:1 / -1; height:10px; }
+.menu-list li {
+  display:grid; grid-template-columns:1fr auto;
+  align-items:center; min-height:31px; padding:0 .4rem;
+  font-family:"Patrick Hand", sans-serif; color:#fff;
+  font-size:1.2rem; letter-spacing:.1rem;
+  filter:drop-shadow(0 0 .5px rgba(255,255,255,.35));
+}
+.menu-list li .label{ position:relative; padding-right:.5rem; }
+.menu-list li .label::after{
+  content:""; height:1px; border-bottom:2px dotted rgba(255,255,255,.35);
+  display:block; margin:0 .4rem;
+}
+.menu-list li .price{ justify-self:end; padding-left:.5rem; }
+.menu-list li{ --minDots:60px; }
+.menu-list li .price{ min-width:var(--minDots); text-align:right; }
+.menu-note{
+  color:#fff; font-family:"Patrick Hand", sans-serif;
+  font-size:1rem; letter-spacing:.04rem; padding:.2rem 1.2rem 1rem;
+  opacity:.9;
+}
+@media (max-width:900px){
+  .menu-list{ grid-template-columns:1fr; }
+  .menu-list .sep{ display:none; }
+}
+
+/* ===== HORIZONTALT GALLERI (SCROLL) ===== */
+.gallery {
+  padding: 1rem 0 2rem;
+}
+
+.scroller {
+  display: flex;
+  gap: 16px; /* afstand mellem billederne */
+  overflow-x: auto;
+  padding: 0 1rem 1rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+}
+.scroller::-webkit-scrollbar {
+  display: none; /* Chrome/Safari skjul */
+}
+
+/* hvert kort */
+.card {
+  flex: 0 0 auto;
+  width: clamp(200px, 45vw, 280px);
+  scroll-snap-align: start;
+  border-radius: 6px;
+  background: #fff;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* billedet */
+.card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.card:hover img {
+  transform: scale(1.04);
+}
+
+/* tekst under billedet */
+.card figcaption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0.4rem 0.8rem;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2b2b2b;
+}
+
+/* navn og pris */
+.item-name {
+  text-align: left;
+}
+.item-price {
+  text-align: right;
+  color: #2b2b2b;
+}
+
+/* start/slut padding så de ikke klistrer til skærmkant */
+.scroller::before,
+.scroller::after {
+  content: "";
+  flex: 0 0 0.5rem;
+}
+
+/* små skærme */
+@media (max-width: 520px) {
+  .card {
+    width: clamp(160px, 60vw, 220px);
+  }
+
+  .card figcaption {
+    font-size: 0.9rem;
+  }
 }

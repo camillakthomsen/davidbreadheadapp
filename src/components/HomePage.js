@@ -6,6 +6,7 @@ export default function HomePage() {
   return (
     <main className="homepage">
       <section className="hero-only">
+        <h1>DavidBreadHead</h1>
         <img
           src={FrontpagePicture}
           alt="DavidBreadHead"

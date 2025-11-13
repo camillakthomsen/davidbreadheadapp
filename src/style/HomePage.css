@@ -1,18 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..800&display=swap');
+
+
 .homepage {
   background-color: #ffffff;
 }
 
-/* Hero-billedet midt på siden */
+/* Hero-sektion */
 .hero-only {
   display: flex;
-  justify-content: center;
-  padding: 0rem 0 3rem;
+  flex-direction: column; /* tekst over billede */
+  align-items: center;
+  padding: 0 0 4rem;
 }
 
+/* Hero-overskrift */
+.hero-only h1 {
+  color: #1f6a46;
+  margin-top: -4rem;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 6rem;
+  letter-spacing: 0.35rem;
+  line-height: 1;                  /* undgå layout-hop */
+  display: inline-block;           /* så transform ikke påvirker linjehøjde */
+  will-change: transform, font-variation-settings;
+  animation: rise 7s cubic-bezier(.45,0,.2,1) infinite alternate;
+}
+
+/* Billedet */
 .hero-image {
   width: 100%;
   max-width: 1200px;
   height: auto;
   border-radius: 8px;
   display: block;
+  margin-top: -2rem;
+}
+
+@keyframes rise {
+  0% {
+    transform: scale(1);
+    font-variation-settings: "wght" 350;  /* tynd */
+    letter-spacing: 0.35rem;
+  }
+  100% {
+    transform: scale(1.25);
+    font-variation-settings: "wght" 850;  /* “bold” */
+    letter-spacing: 0.1rem;
+  }
+}
+
+/* 📱 Mobilvenlig tilpasning */
+@media (max-width: 768px) {
+  .hero-only h1 {
+    font-size: 2rem; /* mindre overskrift på mobil */
+    margin-bottom: 0.8rem;
+  }
+
+  .hero-image {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+}
+
+/* 📱 Ekstra lille skærm (f.eks. iPhone SE) */
+@media (max-width: 480px) {
+  .hero-only h1 {
+    font-size: 1.6rem;
+  }
 }
