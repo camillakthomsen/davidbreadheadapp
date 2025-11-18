@@ -1,4 +1,4 @@
-import Surdejskursus from "../pictures/surdejskursus.png";
+import SourdoughGif from "../pictures/bread_icon_half_width_larger.gif";
 import Footer from "../components/Footer";
 import "../style/Sourdough.css";
 
@@ -8,14 +8,18 @@ export default function Sourdough() {
       <section className="sourdough-hero">
         <div className="sourdough-left">
           <img
-            src={Surdejskursus}
-            alt="Surdejskursus"
+            src={SourdoughGif}
+            alt="Sourdough Animation"
             className="surdej-img"
           />
         </div>
 
         <div className="sourdough-right">
-          <h1>surdejskursus</h1>
+          <h1>Surdejskursus</h1>
+
+          <div className="sourdough-list">
+            <p>Nyder du at nørde med bagværk! Så er et surdejskursus nok for dig! Vi afholder løbende vores surdejskurser 1-2 gange om måneden. Datoerne vil blive lagt op her på siden og instagram</p>
+          </div>
 
           {/* NÆSTE KURSUS */}
           <section className="sourdough-next">
@@ -39,11 +43,9 @@ export default function Sourdough() {
           </section>
 
           {/* KORT “DET FÅR DU” */}
-          <ul className="sourdough-list">
-            <li>Hævekurv, egen surdej og et friskbagt brød med hjem</li>
-            <li>Dej og rå croissanter, du selv bager færdig</li>
-            <li>Opskrift og trin-for-trin gennemgang under kurset</li>
-          </ul>
+          <div className="sourdough-list">
+            <p>Du får en hævekurv, din egen surdej og et friskbagt brød med hjem, samt dej og rå croissanter, du selv bager færdig. Derudover får du opskrift og en trin-for-trin gennemgang under kurset.</p>
+          </div>
 
           {/* KNAPPER */}
           <div className="sourdough-actions">

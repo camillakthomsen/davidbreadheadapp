@@ -11,14 +11,14 @@ function Events() {
         <div className="events-list">
           <article className="event-card">
             <div className="event-date">
-              <span className="event-month">TUE &</span>
-              <span className="event-month">THU</span>
+              <span className="event-month">Tirs &</span>
+              <span className="event-month">Tors</span>
             </div>
             <div className="event-main">
               <h2 className="event-title">
                 Running
                 <br />
-                Every Tuesday at 6.45 and Thursday at 17.30
+                Hver tirsdag kl. 6:45 og torsdag kl. 17:30
               </h2>
             </div>
           </article>
@@ -29,7 +29,7 @@ function Events() {
               <span className="event-day">24</span>
             </div>
             <div className="event-main">
-              <h2 className="event-title">Sourdough</h2>
+              <h2 className="event-title">Surdejskursus</h2>
             </div>
           </article>
         </div>

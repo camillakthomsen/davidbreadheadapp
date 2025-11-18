@@ -1,4 +1,3 @@
-import coffeebag from "../pictures/coffeebag.png";
 import Footer from "../components/Footer";
 import "../style/Coffee.css";
 
@@ -6,12 +5,6 @@ export default function Coffee() {
   return (
     <main className="coffee-page">
       <section className="coffee-section">
-        <img
-          src={coffeebag}
-          alt="Jubi Coffee"
-          className="coffee-image"
-        />
-
         <h1 className="coffee-title">Jubi Coffee x DavidBreadHead</h1>
 
         <p className="coffee-text">

@@ -2,10 +2,11 @@
 .jobs {
   background-color: #ffffff; /* samme vibe som events-siden */
   padding: 0rem 3rem 4.5rem;
+  margin-top: -4rem;
 }
 
 .jobs-inner {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -82,7 +83,6 @@
   font-family: "Playfair Display", serif;
   font-size: 2.4rem;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
   color: #197c52;           /* samme grøn som logoet */
   margin-bottom: 1rem;
 }

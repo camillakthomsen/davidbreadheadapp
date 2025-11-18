@@ -1,31 +1,23 @@
 .coffee-page {
-  background-color: #ffffff;
-  font-family: "Poppins", sans-serif;
-  text-align: center;
-  padding: 2rem 1rem;
+  background-image: url("../pictures/jubi.png");
+  background-repeat: no-repeat;
+  background-size: 600px;
+  background-position: center -40px;
 }
 
 /* Sektionen */
 .coffee-section {
   max-width: 800px;
   margin: 0 auto 4rem auto;
-}
-
-/* Billedet */
-.coffee-image {
-  width: 330px;
-  height: auto;
-  border-radius: 5px;
-  display: block;
-  margin: 0 auto 2rem auto;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
 }
 
 /* Overskrift */
 .coffee-title {
   font-family: "Playfair Display", serif;
   color: #1f6a46;
-  font-size: 2.5rem;
+  font-size: 3rem;
+  margin-top: 9rem;
   margin-bottom: 1rem;
 }
 
@@ -35,7 +27,8 @@
   margin: 0 auto;
   font-size: 0.95rem;
   line-height: 1.7;
-  color: #222;
+  color: #0f0f0f;
+  margin-bottom: 2rem;
 }
 
 /* Responsiv */

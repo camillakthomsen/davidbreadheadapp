@@ -1,6 +1,7 @@
 .sourdough-page {
   background-color: #ffffff;
   min-height: 100vh;
+  margin-top: -3rem;
 }
 
 /* Layout: billede + tekst */
@@ -15,9 +16,9 @@
 
 .sourdough-left img {
   width: 100%;
-  max-width: 420px;
+  max-width: 300px;
+  margin-left: 2rem;
   height: auto;
-  border-radius: 8px;
   display: block;
 }
 
@@ -46,7 +47,7 @@
   font-size: 1.1rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: #d86c35;
+  color: #533628;
   margin: 1.8rem 0 0.75rem;
 }
 
@@ -54,7 +55,7 @@
 .course-card {
   display: flex;
   align-items: center;
-  background-color: #fff7e9;
+  background-color: #f8eedc85;
   border-radius: 16px;
   padding: 1rem 1.4rem;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04);
@@ -108,10 +109,9 @@
 
 /* Lille liste med “det får du” */
 .sourdough-list {
-  margin: 0 0 1.5rem;
-  padding-left: 1.1rem;
+  margin: 0 0 0rem;
   font-size: 0.95rem;
-  line-height: 1.6;
+  line-height: 2;
 }
 
 /* Knapper */
@@ -132,12 +132,12 @@
 }
 
 .secondary-btn {
-  background-color: #d86c35;
+  background-color: #a74b23;
   color: #fff;
 }
 
 .secondary-btn:hover {
-  background-color: #c25f2f;
+  background-color: #692c12;
 }
 
 /* Mobil */

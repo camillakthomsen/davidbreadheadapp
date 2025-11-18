@@ -14,7 +14,6 @@ export default function NavBar() {
     { label: "Home", link: "/" },
     { label: "Menu", link: "/delivery" },
     { label: "Coffee", link: "/coffee" },
-    { label: "Events", link: "/events" },
     { label: "Running", link: "/running" },
     { label: "Sourdough", link: "/sourdough" },
   ];
@@ -24,17 +23,20 @@ export default function NavBar() {
       {/* Venstre: burger (synlig altid) */}
       <div className="nav-left">
         <button
-          className="burger-btn"
-          onClick={toggleMenu}
-          aria-label={isOpen ? "Luk menu" : "Åbn menu"}
-          style={{ zIndex: 1100 }}   // over overlay
-        >
-          {isOpen ? <span className="burger-close"></span> : <>
-            <span className="burger-line" />
-            <span className="burger-line" />
-            <span className="burger-line" />
-          </>}
-        </button>
+  className="burger-btn"
+  onClick={toggleMenu}
+  aria-label={isOpen ? "Luk menu" : "Åbn menu"}
+>
+  {isOpen ? (
+    <span className="burger-x">✕</span>
+  ) : (
+    <>
+      <span className="burger-line" />
+      <span className="burger-line" />
+    </>
+  )}
+</button>
+
       </div>
 
       {/* Højre: kurv */}

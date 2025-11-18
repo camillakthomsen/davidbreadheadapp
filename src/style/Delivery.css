@@ -7,138 +7,186 @@
 .menu-wrap {
   display: flex;
   justify-content: center;
-  padding: 0rem 0rem 1rem; /* <-- ændr til fx - lidt negativ margin */
-  margin-top: -3rem; /* trækker den tættere på navbaren */
+  padding: 0rem 0rem 1rem;
+  margin-top: -6rem;
 }
 
 .menu-board {
   width: 100%;
-  max-width: 650px;          /* var 820px → lidt smallere */
-  border: 8px solid #d8b27b; /* var 10px → lidt tyndere */
-  border-radius: 6px;        /* også lidt mindre afrunding */
+  max-width: 650px;
+  border: 4px solid #000000;
+  border-radius: 6px;
   background:
     repeating-linear-gradient(to bottom,
-      #141414 0 30px, #0f0f0f 38px 40px);
+      #ffffff 0 30px, #ffffff 38px 40px);
   box-shadow: 0 6px 18px rgba(0,0,0,.22);
 }
 
 .menu-title {
   font-family:"Patrick Hand", sans-serif;
-  color:#fff; letter-spacing:.2rem;
-  text-align:center; padding:.6rem 1rem 0; margin:0;
+  color:#080808;
+  letter-spacing:.2rem;
+  text-align:center;
+  padding:.6rem 1rem 0;
+  margin:0;
   font-size:1.5rem;
 }
-.menu-list {
-  list-style:none; margin:.5rem 0 0;
-  padding:0rem 1.2rem 1rem;
-  display:grid; gap:8px 40px; grid-template-columns:1fr 1fr;
+
+/* ny wrapper til de to kolonner */
+.menu-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  padding: 0rem 1.2rem 1rem;
 }
-.menu-list .sep { grid-column:1 / -1; height:10px; }
+
+/* hver kolonne-liste */
+.menu-list {
+  list-style:none;
+  margin:.3rem 0 0;
+  padding:0;
+  display:grid;
+  gap:2px 0;
+}
+
+.menu-list .sep {
+  height:10px;
+}
+
 .menu-list li {
-  display:grid; grid-template-columns:1fr auto;
-  align-items:center; min-height:31px; padding:0 .4rem;
-  font-family:"Patrick Hand", sans-serif; color:#fff;
-  font-size:1.2rem; letter-spacing:.1rem;
+  display:grid;
+  grid-template-columns:1fr auto;
+  align-items:center;
+  min-height:24px;
+  padding:0 .6rem;
+  font-family: "Poppins", sans-serif;
+  color:#000000;
+  font-size:0.85rem;
+  letter-spacing:.1rem;
   filter:drop-shadow(0 0 .5px rgba(255,255,255,.35));
 }
-.menu-list li .label{ position:relative; padding-right:.5rem; }
-.menu-list li .label::after{
-  content:""; height:1px; border-bottom:2px dotted rgba(255,255,255,.35);
-  display:block; margin:0 .4rem;
+
+.menu-list li .label{
+  position:relative;
+  padding-right:.5rem;
 }
-.menu-list li .price{ justify-self:end; padding-left:.5rem; }
-.menu-list li{ --minDots:60px; }
-.menu-list li .price{ min-width:var(--minDots); text-align:right; }
+.menu-list li .label::after{
+  content:"";
+  height:1px;
+  border-bottom:2px dotted rgba(255,255,255,.35);
+  display:block;
+  margin:0 .4rem;
+}
+.menu-list li .price{
+  justify-self:end;
+  padding-left:.5rem;
+}
+.menu-list li{
+  --minDots:60px;
+}
+.menu-list li .price{
+  min-width:var(--minDots);
+  text-align:right;
+}
+
 .menu-note{
-  color:#fff; font-family:"Patrick Hand", sans-serif;
-  font-size:1rem; letter-spacing:.04rem; padding:.2rem 1.2rem 1rem;
+  color:#fff;
+  font-family:"Patrick Hand", sans-serif;
+  font-size:1rem;
+  letter-spacing:.04rem;
+  padding:.2rem 1.2rem 1rem;
   opacity:.9;
 }
-@media (max-width:900px){
-  .menu-list{ grid-template-columns:1fr; }
-  .menu-list .sep{ display:none; }
-}
-
-/* ===== HORIZONTALT GALLERI (SCROLL) ===== */
+/* ===== HORIZONTALT GALLERI (MEGA BASIC) ===== */
 .gallery {
-  padding: 1rem 0 2rem;
-}
-
-.scroller {
-  display: flex;
-  gap: 16px; /* afstand mellem billederne */
   overflow-x: auto;
-  padding: 0 1rem 1rem;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none; /* Firefox */
-}
-.scroller::-webkit-scrollbar {
-  display: none; /* Chrome/Safari skjul */
+  padding: 1rem 0 2rem;
+  scrollbar-width: none;
 }
 
-/* hvert kort */
-.card {
-  flex: 0 0 auto;
-  width: clamp(200px, 45vw, 280px);
-  scroll-snap-align: start;
-  border-radius: 6px;
-  background: #fff;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+.gallery-strip {
+  display: flex;
+  padding: 0 0.5rem 1rem; /* lidt luft til kanterne */
 }
 
-/* billedet */
-.card img {
+.gallery-slide {
+  flex: 0 0 220px;         /* FAST bredde → nem at styre */
+  margin-right: 8px;       /* afstand mellem billederne */
+  text-align: center;
+}
+
+.gallery-slide:last-child {
+  margin-right: 0;         /* ingen ekstra luft efter sidste */
+}
+
+.gallery-slide img {
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  height: 200px;      /* ← vælg den højde du vil have */
+  object-fit: cover;  /* ← sørger for at billedet beskæres pænt */
   display: block;
-  transition: transform 0.4s ease;
-}
-.card:hover img {
-  transform: scale(1.04);
 }
 
 /* tekst under billedet */
-.card figcaption {
+.gallery-slide figcaption {
+  margin-top: 0.4rem;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #020202;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 0.6rem 0.4rem 0.8rem;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #2b2b2b;
+  gap: 0.4rem;
 }
 
-/* navn og pris */
 .item-name {
   text-align: left;
 }
+
 .item-price {
   text-align: right;
-  color: #2b2b2b;
 }
 
-/* start/slut padding så de ikke klistrer til skærmkant */
-.scroller::before,
-.scroller::after {
-  content: "";
-  flex: 0 0 0.5rem;
+/* container til begge billeder */
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
 }
 
-/* små skærme */
+/* base image (vises som standard) */
+.img-base {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+/* hover image (starter skjult) */
+.img-hover {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* når musen er over → vis hover-billede */
+.gallery-slide:hover .img-base {
+  opacity: 0;
+}
+
+.gallery-slide:hover .img-hover {
+  opacity: 1;
+}
+
+
+/* mobil – lidt smallere kort hvis du vil */
 @media (max-width: 520px) {
-  .card {
-    width: clamp(160px, 60vw, 220px);
-  }
-
-  .card figcaption {
-    font-size: 0.9rem;
+  .gallery-slide {
+    flex-basis: 140px;
   }
 }

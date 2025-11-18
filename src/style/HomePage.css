@@ -1,75 +1,153 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..800&display=swap');
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 
 .homepage {
   background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Hero-sektion */
 .hero-only {
+  position: relative;          /* 👉 så vi kan placere h1 ovenpå */
+  flex: 1;
   display: flex;
-  flex-direction: column; /* tekst over billede */
-  align-items: center;
-  padding: 0 0 4rem;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 0;
+  padding-top: 0;  
+  margin-top: 0;
 }
 
-/* Hero-overskrift */
+/* Hero-overskrift – ligger ovenpå, tager IKKE højde i layoutet */
 .hero-only h1 {
+  position: absolute;
+  top: -6rem;                 /* justér hvis den skal tættere på/ længere fra toppen */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+
   color: #1f6a46;
-  margin-top: -4rem;
+  margin: 0;
   font-family: 'Quicksand', sans-serif;
   font-size: 6rem;
   letter-spacing: 0.35rem;
-  line-height: 1;                  /* undgå layout-hop */
-  display: inline-block;           /* så transform ikke påvirker linjehøjde */
+  line-height: 1;
+  display: inline-block;
   will-change: transform, font-variation-settings;
   animation: rise 7s cubic-bezier(.45,0,.2,1) infinite alternate;
 }
 
-/* Billedet */
-.hero-image {
-  width: 100%;
-  max-width: 1200px;
-  height: auto;
-  border-radius: 8px;
-  display: block;
-  margin-top: -2rem;
+.hero-only h2{
+  position: absolute;
+  align-items: center;
+  margin: 0;
+  left: 35%;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+  color: #1f6a46;
 }
 
 @keyframes rise {
   0% {
-    transform: scale(1);
-    font-variation-settings: "wght" 350;  /* tynd */
+    transform: translateX(-50%) scale(1);
+    font-variation-settings: "wght" 350;
     letter-spacing: 0.35rem;
   }
   100% {
-    transform: scale(1.25);
-    font-variation-settings: "wght" 850;  /* “bold” */
+    transform: translateX(-50%) scale(1.25);
+    font-variation-settings: "wght" 850;
     letter-spacing: 0.1rem;
   }
 }
 
-/* 📱 Mobilvenlig tilpasning */
+/* Container til de to billeder */
+.image-row {
+  display: flex;
+  gap: 6rem;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  margin-top: -8rem;   /* 💡 trækker billederne op */
+}
+
+/* gør billed-rækken fuld højde inde i hero */
+.full-height {
+  height: 100%;
+  align-items: stretch;
+}
+
+/* Lille billede venstre */
+.small-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.small-img-wrapper {
+  width: 35%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 11rem;
+  margin-left: 8rem;
+}
+
+.small-img-text {
+  margin-top: 1rem;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.4;
+  text-align: left;
+}
+
+
+/* Stort billede højre */
+.large-img {
+  flex: 0 0 auto;
+}
+
+/* stort billede udfylder hele højden */
+.full-height-img {
+  height: auto;
+  width: 600px;
+  max-width: none;   /* 👉 Gør billedet mindre her! */
+  object-fit: cover;
+}
+
+/* Mobil version */
 @media (max-width: 768px) {
   .hero-only h1 {
-    font-size: 2rem; /* mindre overskrift på mobil */
-    margin-bottom: 0.8rem;
+    font-size: 3rem;
   }
 
-  .hero-image {
+  .image-row {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .small-img,
+  .large-img {
+    width: 100%;
     max-width: 100%;
-    border-radius: 5px;
   }
 }
 
-/* 📱 Ekstra lille skærm (f.eks. iPhone SE) */
+/* Ekstra lille skærm */
 @media (max-width: 480px) {
   .hero-only h1 {
-    font-size: 1.6rem;
+    font-size: 2.2rem;
+    letter-spacing: 0.2rem;
+    top: 1.5rem;
   }
 }

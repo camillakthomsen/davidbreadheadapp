@@ -28,7 +28,6 @@
   font-family: "Playfair Display", serif;
   font-size: 2.4rem;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
   color: #197c52;           /* samme grøn som logoet */
   margin-top: -3rem;
 }
@@ -48,7 +47,7 @@
 }
 
 .running-card {
-  background-color: #fff7e9;
+  background-color: #f8eedc85;
   border-radius: 10px;
   padding: 1rem 1.75rem;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04);
@@ -59,7 +58,7 @@
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: #d86c35;          /* din orange */
+  color: #533628;          /* din orange */
   margin: 0 0 0.75rem;
 }
 
