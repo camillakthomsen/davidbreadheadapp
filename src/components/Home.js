@@ -64,8 +64,9 @@ export default function Home() {
         <div className="column-slider" ref={leftRef}>
           {leftImages.map((src, index) => (
             <div className="slide" key={index}>
-              <img src={src} alt={`Left ${index + 1}`} />
+              <img src={src} alt={`Left ${index + 1}`} loading="lazy" />
             </div>
+
           ))}
         </div>
 
@@ -73,7 +74,7 @@ export default function Home() {
         <div className="column-slider" ref={rightRef}>
           {rightImages.map((src, index) => (
             <div className="slide" key={index}>
-              <img src={src} alt={`Right ${index + 1}`} />
+              <img src={src} alt={`Right ${index + 1}`} loading="lazy" />
             </div>
           ))}
         </div>

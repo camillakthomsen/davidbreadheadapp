@@ -51,7 +51,7 @@
   z-index: 10;
   font-size: clamp(2.5rem, 4vw, 3.8rem);
   font-weight: 800;
-  color: #1e4fa8;
+  color: #1f6a46;
   -webkit-text-stroke: 3px #fff;
   pointer-events: none;
 }
@@ -64,7 +64,7 @@
   z-index: 10;
   font-size: clamp(1.2rem, 2vw, 2rem);
   font-weight: 800;
-  color: #1e4fa8;
+  color: #1f6a46;
   -webkit-text-stroke: 2px #fff;
   pointer-events: none;
 }
@@ -78,7 +78,7 @@
   z-index: 10;
   font-size: clamp(2.5rem, 4vw, 3.8rem);
   font-weight: 800;
-  color: #1e4fa8;
+  color: #1f6a46;
   -webkit-text-stroke: 3px #fff;
   pointer-events: none;
 }
@@ -91,7 +91,7 @@
   z-index: 10;
   font-size: clamp(1.2rem, 2vw, 2rem);
   font-weight: 800;
-  color: #1e4fa8;
+  color: #1f6a46;
   -webkit-text-stroke: 2px #fff;
   pointer-events: none;
 }
