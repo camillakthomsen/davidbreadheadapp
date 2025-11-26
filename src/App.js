@@ -2,15 +2,15 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import NavBar from "./components/NavBar";
-import HomePage from "./components/HomePage";
+import Home from "./components/Home";
 import Coffee from "./components/Coffee";
 import Contact from "./components/Contact";
-import Delivery from "./components/Delivery";
 import Events from "./components/Events";
 import Jobs from "./components/Jobs";
 import Location from "./components/Location";
 import Running from "./components/Running";
-import Sourdough from "./components/Sourdough";
+import Surdejskursus from "./components/Surdejskursus";
+import Menu from "./components/Menu";
 
 export default function App() {
   return (
@@ -20,15 +20,15 @@ export default function App() {
 
       {/* Selve siderne */}
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<Home />} />
         <Route path="/coffee" element={<Coffee />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/delivery" element={<Delivery />} />
+        <Route path="/menu" element={<Menu />} />
         <Route path="/events" element={<Events />} />
         <Route path="/jobs" element={<Jobs />} />
         <Route path="/location" element={<Location />} />
         <Route path="/running" element={<Running />} />
-        <Route path="/sourdough" element={<Sourdough />} />
+        <Route path="/surdejskursus" element={<Surdejskursus />} />
       </Routes>
     </Router>
   );

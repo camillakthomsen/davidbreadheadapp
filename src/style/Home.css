@@ -1,0 +1,117 @@
+/* sideroot */
+.split-slider-page {
+  height: 100vh;
+  background: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  margin-top: -4rem !important;
+}
+
+/* container med to kolonner */
+.split-slider {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* én kolonne */
+.column-slider {
+  position: relative;
+  flex: 1;
+  height: 100%;
+  overflow-y: scroll;          /* ⬅ nu kan du selv scrolle */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.column-slider::-webkit-scrollbar {
+  display: none;
+}
+
+/* hvert billede fylder en skærm i højden */
+.slide {
+  height: 100vh;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* OVERLAY-TITLER – venstre side */
+.overlay-title {
+  position: absolute;
+  bottom: 3rem;
+  left: 20%;                       /* midten af venstre kolonne */
+  transform: translateX(-50%);
+  z-index: 10;
+  font-size: clamp(2.5rem, 4vw, 3.8rem);
+  font-weight: 800;
+  color: #1e4fa8;
+  -webkit-text-stroke: 3px #fff;
+  pointer-events: none;
+}
+
+.overlay-undertitle {
+  position: absolute;
+  bottom: 2rem;
+  left: 18.5%;
+  transform: translateX(-50%);
+  z-index: 10;
+  font-size: clamp(1.2rem, 2vw, 2rem);
+  font-weight: 800;
+  color: #1e4fa8;
+  -webkit-text-stroke: 2px #fff;
+  pointer-events: none;
+}
+
+/* OVERLAY-TITLER – højre side (spejlet) */
+.overlay-title-right {
+  position: absolute;
+  bottom: 3rem;
+  left: 70%;                      /* midten af højre kolonne */
+  transform: translateX(-50%);
+  z-index: 10;
+  font-size: clamp(2.5rem, 4vw, 3.8rem);
+  font-weight: 800;
+  color: #1e4fa8;
+  -webkit-text-stroke: 3px #fff;
+  pointer-events: none;
+}
+
+.overlay-undertitle-right {
+  position: absolute;
+  bottom: 2rem;
+  left: 66%;
+  transform: translateX(-50%);
+  z-index: 10;
+  font-size: clamp(1.2rem, 2vw, 2rem);
+  font-weight: 800;
+  color: #1e4fa8;
+  -webkit-text-stroke: 2px #fff;
+  pointer-events: none;
+}
+
+/* mobil: de to kolonner under hinanden */
+@media (max-width: 800px) {
+  .split-slider {
+    flex-direction: column;
+  }
+
+  .column-slider {
+    height: 50vh;
+  }
+
+  .overlay-title,
+  .overlay-undertitle,
+  .overlay-title-right,
+  .overlay-undertitle-right {
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+}

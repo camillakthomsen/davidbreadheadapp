@@ -13,9 +13,9 @@ import pain_2 from "../pictures/painachocolate2.png";
 import vaniljespandauer_1 from "../pictures/vaniljespandauer1.png";
 import vaniljespandauer_2 from "../pictures/vaniljespandauer.png";
 import Footer from "./Footer";
-import "../style/Delivery.css";
+import "../style/Menu.css";
 
-export default function Delivery() {
+export default function Menu() {
   const items = [
     { src: almondcroissant_1, hoverSrc: almondcroissant_2, caption: "Mandel croissant", price: "42,-" },
     { src: brunsviger_1, hoverSrc: brunsviger_2, caption: "Brunsviger croissant", price: "40,-" },

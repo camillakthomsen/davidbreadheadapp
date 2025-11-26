@@ -1,7 +1,7 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  background: #ffffff;
+  background: white;
   font-size: 0.8rem;
   padding: 2rem 3rem;
   border-top: 1px solid #ddd;
@@ -18,7 +18,7 @@
 }
 
 .footer-right a {
-  color: #222;              /* sort tekst */
+  color: #000000;              /* sort tekst */
   text-decoration: none;    /* fjern streg under */
   display: block;        /* 👈 gør hvert link til en blok (ny linje) */
   margin: 0.25rem 0;

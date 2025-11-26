@@ -1,8 +1,8 @@
 import SourdoughGif from "../pictures/bread_icon_half_width_larger.gif";
-import Footer from "../components/Footer";
-import "../style/Sourdough.css";
+import Footer from "./Footer";
+import "../style/surdejskursus.css";
 
-export default function Sourdough() {
+export default function Surdejskursus() {
   return (
     <main className="sourdough-page">
       <section className="sourdough-hero">

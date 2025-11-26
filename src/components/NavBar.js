@@ -12,10 +12,10 @@ export default function NavBar() {
 
   const items = [
     { label: "Home", link: "/" },
-    { label: "Menu", link: "/delivery" },
+    { label: "Menu", link: "/menu" },
     { label: "Coffee", link: "/coffee" },
     { label: "Running", link: "/running" },
-    { label: "Sourdough", link: "/sourdough" },
+    { label: "Sourdough", link: "/surdejskursus" },
   ];
 
   return (
