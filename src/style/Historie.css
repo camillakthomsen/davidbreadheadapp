@@ -15,4 +15,11 @@
   font-family: "Playfair Display", serif;
   color: #1f6a46;               /* grøn */
   font-size: 2rem;
+  margin-top: 6rem;
+}
+
+.contact-apply{  
+  color:#d26a2a;
+  font-size:1rem;
+  margin-bottom: 29rem;
 }

@@ -97,28 +97,32 @@
 
 @media (max-width: 800px) {
 
-  /* Kolonner bliver én lang kolonne */
+  /* Nu ligger de to kolonner side-om-side */
   .split-slider {
-    flex-direction: column;
+    flex-direction: row;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    width: 100vw;
   }
 
-  /* Hver slider fylder 100vh, så de glider vertikalt */
+  /* Hver kolonne fylder én skærm i bredden */
   .column-slider {
+    width: 100vw;
     height: 100vh;
-    overflow-y: scroll;
-  }
-
-  /* Billederne snappes pænt */
-  .slide {
+    overflow-y: scroll; /* billederne slider stadig vertikalt inde i hver kolonne */
     scroll-snap-align: start;
   }
 
-  /* Flyt tekstgrupper til midten af skærmen */
+  /* Hver slide inde i kolonnen */
+  .slide {
+    height: 100vh;
+  }
+
+  /* Centrer teksten pænt */
   .overlay-group {
     left: 50% !important;
     bottom: 2rem;
     transform: translateX(-50%);
     text-align: center;
   }
-
 }

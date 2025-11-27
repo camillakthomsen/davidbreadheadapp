@@ -5,7 +5,7 @@ import "./../App.css";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
-  const toggleMenu = () => setIsOpen(p => !p);
+  const toggleMenu = () => setIsOpen((p) => !p);
   const closeMenu = () => setIsOpen(false);
 
   const items = [
@@ -21,25 +21,19 @@ export default function NavBar() {
       {/* Venstre: burger (synlig altid) */}
       <div className="nav-left">
         <button
-  className="burger-btn"
-  onClick={toggleMenu}
-  aria-label={isOpen ? "Luk menu" : "Åbn menu"}
->
-  {isOpen ? (
-    <span className="burger-x">✕</span>
-  ) : (
-    <>
-      <span className="burger-line" />
-      <span className="burger-line" />
-    </>
-  )}
-</button>
-
-      </div>
-
-      {/* Højre: kurv */}
-      <div className="nav-right">
-        <p>davidbreadhead@gmail.com</p>
+          className="burger-btn"
+          onClick={toggleMenu}
+          aria-label={isOpen ? "Luk menu" : "Åbn menu"}
+        >
+          {isOpen ? (
+            <span className="burger-x">✕</span>
+          ) : (
+            <>
+              <span className="burger-line" />
+              <span className="burger-line" />
+            </>
+          )}
+        </button>
       </div>
 
       {/* VENSTRE drawer */}

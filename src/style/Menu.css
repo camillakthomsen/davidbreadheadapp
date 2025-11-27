@@ -1,14 +1,16 @@
 /* Font til tavlen */
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand:wght@400&display=swap');
 
-.delivery-page { background:#a52121; margin-top: -4rem; }
+.delivery-page { background:#a52121; margin-top: -4rem; background-image: url("../pictures/DS9.webp");
+  background-size: cover;
+  background-position: center;}
 
 /* ===== MENU BOARD ===== */
 .menu-wrap {
   display: flex;
   justify-content: center;
   padding: 0rem 0rem 1rem;
-  margin-top: 1rem;
+  margin-top: 4rem;
 }
 
 .menu-board {
@@ -16,6 +18,7 @@
   max-width: 650px;
   border: 4px solid #000000;
   border-radius: 6px;
+  margin-top: 3rem;
   background:
     repeating-linear-gradient(to bottom,
       #ffffff 0 30px, #ffffff 38px 40px);
@@ -184,9 +187,54 @@
 }
 
 
-/* mobil – lidt smallere kort hvis du vil */
-@media (max-width: 520px) {
-  .gallery-slide {
-    flex-basis: 140px;
+/* ==== MOBIL: gør menu-board mindre og mere kompakt ==== */
+@media (max-width: 768px) {
+  .menu-wrap {
+    padding: 0 0.5rem 1rem;   /* lidt mindre sidepadding */
+    margin-top: 2rem;
+  }
+
+  .menu-board {
+    max-width: 95vw;          /* fyld næsten hele skærmen, men uden at gå ud over */
+    margin-top: 1.5rem;
+  }
+
+  .menu-title {
+    font-size: 1.2rem;        /* lidt mindre overskrift */
+    letter-spacing: 0.15rem;
+  }
+
+  .menu-columns {
+    grid-template-columns: 1fr; /* én kolonne i stedet for to */
+    column-gap: 0;
+    row-gap: 0.8rem;
+    padding: 0.5rem 0.8rem 1rem;
+  }
+
+  .menu-list li {
+    font-size: 0.75rem;       /* mindre tekst */
+    letter-spacing: 0.06rem;
+    padding: 0 0.3rem;
+    min-height: 20px;
+  }
+
+  .menu-note {
+    font-size: 0.85rem;
+    padding: 0.2rem 0.8rem 1rem;
+  }
+}
+
+/* ekstra lille skærm (iPhone SE osv.) */
+@media (max-width: 480px) {
+  .menu-board {
+    border-width: 3px;
+  }
+
+  .menu-title {
+    font-size: 1.05rem;
+  }
+
+  .menu-list li {
+    font-size: 0.7rem;
   }
 }

@@ -57,8 +57,7 @@ export default function Running() {
 </div>
 
       </section>
-
-    <Footer/>
+      <Footer/>
     </main>
   );
 }
