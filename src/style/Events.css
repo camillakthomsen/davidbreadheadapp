@@ -7,11 +7,13 @@
   background-repeat: no-repeat;
   padding: 0rem 1.5rem;
   margin-top: 4rem;
+  min-height: 100vh;
 }
 
 .events-inner {
   max-width: 900px;
   margin: 0 auto;
+  padding-bottom: 4rem;
 }
 
 .events-inner h1 {

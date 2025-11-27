@@ -24,9 +24,9 @@ export default function Location() {
 
           <div className="loc-hours">
             <h3>Opening hours</h3>
-            <p>Mandag–Fredag: 07:15 – 18.00</p>
-            <p>Lørdag: 08.30 – 18.00</p>
-            <p>Søndag: 08:30–16:30</p>
+            <p>Monday-Friday: 07:15 – 18.00</p>
+            <p>Saturday: 08.30 – 18.00</p>
+            <p>Sunday: 08:30–16:30</p>
           </div>
         </div>
       </section>
@@ -45,9 +45,9 @@ export default function Location() {
 
           <div className="loc-hours">
             <h3>Opening hours</h3>
-            <p>Mandag–Fredag: 07:15 – 18.00</p>
-            <p>Lørdag: 08.30 – 18.00</p>
-            <p>Søndag: 08:30–16:30</p>
+            <p>Monday-Friday: 07:15 – 18.00</p>
+            <p>Saturday: 08.30 – 18.00</p>
+            <p>Sunday: 08:30–16:30</p>
           </div>
         </div>
 

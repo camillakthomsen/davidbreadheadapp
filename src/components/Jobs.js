@@ -12,26 +12,26 @@ function Jobs() {
           <article className="job-card">
             <div className="job-label">
               <span className="job-label-top">SoMe</span>
-              <span className="job-label-bottom">Praktikant</span>
+              <span className="job-label-bottom">Intern</span>
             </div>
             <div className="job-main">
-              <h2 className="job-title">SoMe praktikant</h2>
+              <h2 className="job-title">SoMe Intern</h2>
               <p className="job-description">
-                Som SoMe Praktikant skal du være med til at drive vores Instagram, TikTok og andre medier med henblik på at skaffe mere trafik og lave relevant content til vores platforme.
-Du får ansvaret for at lave en stærk SoMe Strategi og eksekvering, alt fra billeder, reels, Tiktok, Youtube, podcast mm.
+                As a SoMe intern, you will help manage our Instagram, TikTok, and other platforms with the goal of driving more traffic and creating relevant content for our channels.
+You will be responsible for developing a strong social media strategy and executing it — everything from photos, reels, TikTok, YouTube, podcasts, and more.
               </p>
             </div>
           </article>
 
           <article className="job-card">
             <div className="job-label">
-              <span className="job-label-top">Uopfordret</span>
-              <span className="job-label-bottom">Ansøgning</span>
+              <span className="job-label-top">Unsolicited</span>
+              <span className="job-label-bottom">Application</span>
             </div>
             <div className="job-main">
-              <h2 className="job-title">Uopfordret ansøgning</h2>
+              <h2 className="job-title">Unsolicited application</h2>
               <p className="job-description">
-                Vi mangler nogengange nye hænder uden vi ved det, så send en ansøgning uopfordret. 
+                We sometimes need new hands without realizing it, so feel free to send an unsolicited application.
               </p>
             </div>
           </article>
@@ -39,7 +39,7 @@ Du får ansvaret for at lave en stærk SoMe Strategi og eksekvering, alt fra bil
 
         {/* --- Ansøgningsinfo --- */}
         <div className="jobs-apply">
-          <p>Jobansøgninger bedes sendes til:</p>
+          <p>Please send the application to:</p>
           <a href="mailto:davidbreadhead@gmail.com" className="jobs-email">
             davidbreadhead@gmail.com
           </a>

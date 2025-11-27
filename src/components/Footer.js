@@ -9,9 +9,7 @@ export default function Footer() {
             <div className="footer-left">
                 <h4>About</h4>
                 <p>
-                    David Milberg grundlagde DavidBreadHead under corona, hvor han i begyndelsen bagte hjemmefra. 
-                    Han åbnede hurtigt et lille bageri i en kælder, og efter kun ét år voksede han ud af lokalet 
-                    og åbnede en café og et bageri på 500 kvm, et professionelt bageri og et kaffebrand – og har i dag over 20 medarbejdere.
+                    David Milberg founded DavidBreadHead during the COVID period, initially baking from home. He quickly opened a small basement bakery, and after just one year he outgrew the space and opened a 500 m² café and bakery, a professional bakery, and a coffee brand — and today he has over 20 employees.
                 </p>
                 <div>
                     <a
