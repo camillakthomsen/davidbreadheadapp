@@ -186,7 +186,7 @@ body {
 }
 
 main {
-  padding-top: 64px;
+  padding-top: 0;
 }
 
 body {
@@ -195,5 +195,5 @@ body {
 
 /* Skub hele app’en ned under navbaren */
 #root {
-  padding-top: 64px;   /* samme højde som .nav */
+  padding-top: 0;   /* samme højde som .nav */
 }

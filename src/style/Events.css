@@ -1,8 +1,12 @@
 /* Sektion */
 
 .events {
-  background-color: #ffffff; /* varm beige som resten af siden */
+  background-image: url("../pictures/bakery2business.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 0rem 1.5rem;
+  margin-top: 4rem;
 }
 
 .events-inner {

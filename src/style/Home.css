@@ -5,7 +5,6 @@
   color: #fff;
   margin: 0;
   padding: 0;
-  margin-top: -4rem !important;
 }
 
 /* container med to kolonner */
@@ -96,19 +95,30 @@
   background-color: #184831;
 }
 
-/* mobil: de to kolonner under hinanden, tekst midtfor */
 @media (max-width: 800px) {
+
+  /* Kolonner bliver én lang kolonne */
   .split-slider {
     flex-direction: column;
   }
 
+  /* Hver slider fylder 100vh, så de glider vertikalt */
   .column-slider {
-    height: 50vh;
+    height: 100vh;
+    overflow-y: scroll;
   }
 
+  /* Billederne snappes pænt */
+  .slide {
+    scroll-snap-align: start;
+  }
+
+  /* Flyt tekstgrupper til midten af skærmen */
   .overlay-group {
-    left: 50%;
+    left: 50% !important;
     bottom: 2rem;
+    transform: translateX(-50%);
     text-align: center;
   }
+
 }
