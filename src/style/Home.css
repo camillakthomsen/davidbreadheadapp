@@ -97,7 +97,7 @@
 
 @media (max-width: 800px) {
 
-  /* Nu ligger de to kolonner side-om-side */
+  /* Slider horisontalt */
   .split-slider {
     flex-direction: row;
     overflow-x: scroll;
@@ -105,24 +105,44 @@
     width: 100vw;
   }
 
-  /* Hver kolonne fylder én skærm i bredden */
   .column-slider {
     width: 100vw;
     height: 100vh;
-    overflow-y: scroll; /* billederne slider stadig vertikalt inde i hver kolonne */
+    overflow-y: scroll; 
     scroll-snap-align: start;
   }
 
-  /* Hver slide inde i kolonnen */
   .slide {
     height: 100vh;
   }
 
-  /* Centrer teksten pænt */
-  .overlay-group {
-    left: 50% !important;
-    bottom: 2rem;
+  /* FÆLLES mobil-justering: mindre tekst */
+  .overlay-title {
+    font-size: 2rem; /* mindre titel */
+    -webkit-text-stroke: 2px #fff;
+  }
+
+  .overlay-undertitle {
+    font-size: 1rem; /* mindre undertitel */
+    -webkit-text-stroke: 1px #fff;
+  }
+
+  .overlay-btn {
+    font-size: 0.7rem;
+    padding: 0.35rem 1rem;
+  }
+
+  /* VENSTRE KOLONNE – tekst trækkes til venstre */
+  .overlay-group-left {
+    left: 25% !important;         /* træk mod venstre */
     transform: translateX(-50%);
-    text-align: center;
+    text-align: left;
+  }
+
+  /* HØJRE KOLONNE – tekst trækkes til højre */
+  .overlay-group-right {
+    left: 75% !important;         /* træk mod højre */
+    transform: translateX(-50%);
+    text-align: right;
   }
 }

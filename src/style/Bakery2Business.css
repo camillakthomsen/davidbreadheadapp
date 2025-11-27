@@ -1,26 +1,25 @@
-.coffee-page {
+.business-page {
   background-image: url("../pictures/bakery2business.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
   margin-top: -9rem;
 }
 
 /* Sektionen */
-.coffee-section {
+.business-section {
   max-width: 800px;
   margin: 0 auto 4rem auto;
   text-align: center;
 }
 
 /* Overskrift */
-.coffee-title {
+.business-title {
   font-family: "Playfair Display", serif;
   color: #1f6a46;
   font-size: 3rem;
   margin-top: 9rem;
-  margin-bottom: 15rem;
+  margin-bottom: 5rem;
 }
 
 .business-card {

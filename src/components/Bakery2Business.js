@@ -3,9 +3,9 @@ import "../style/Bakery2Business.css";
 
 export default function Bakery2Business() {
   return (
-    <main className="coffee-page">
-      <section className="coffee-section">
-        <h1 className="coffee-title">Bakery2Business</h1>
+    <main className="business-page">
+      <section className="business-section">
+        <h1 className="business-title">Bakery2Business</h1>
 
         <article className="business-card">
               <div className="business-main">
