@@ -21,7 +21,7 @@
   position: relative;
   flex: 1;
   height: 100%;
-  overflow-y: scroll;          /* ⬅ nu kan du selv scrolle */
+  overflow-y: scroll;     /* du kan selv scrolle */
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -42,68 +42,47 @@
   display: block;
 }
 
-/* OVERLAY-TITLER – venstre side */
-.overlay-title {
+/* OVERLAY-GRUPPER (titel + undertitel + knap) */
+.overlay-group {
   position: absolute;
-  bottom: 3rem;
-  left: 20%;                       /* midten af venstre kolonne */
+  bottom: 3rem;            /* fælles vertikal placering */
   transform: translateX(-50%);
   z-index: 10;
+  text-align: left;
+}
+
+/* venstre / højre gruppe */
+.overlay-group-left {
+  left: 20%;               /* midten af venstre kolonne */
+}
+
+.overlay-group-right {
+  left: 70%;               /* midten af højre kolonne */
+}
+
+/* TITEL & UNDERTITEL – samme størrelse som før */
+.overlay-title {
   font-size: clamp(2.5rem, 4vw, 3.8rem);
   font-weight: 800;
   color: #1f6a46;
   -webkit-text-stroke: 3px #fff;
-  pointer-events: none;
+  margin: 0 0 0.3rem;
 }
 
 .overlay-undertitle {
-  position: absolute;
-  bottom: 2rem;
-  left: 18.5%;
-  transform: translateX(-50%);
-  z-index: 10;
   font-size: clamp(1.2rem, 2vw, 2rem);
   font-weight: 800;
   color: #1f6a46;
   -webkit-text-stroke: 2px #fff;
-  pointer-events: none;
+  margin: 0 0 0.6rem;
 }
 
-/* OVERLAY-TITLER – højre side (spejlet) */
-.overlay-title-right {
-  position: absolute;
-  bottom: 3rem;
-  left: 70%;                      /* midten af højre kolonne */
-  transform: translateX(-50%);
-  z-index: 10;
-  font-size: clamp(2.5rem, 4vw, 3.8rem);
-  font-weight: 800;
-  color: #1f6a46;
-  -webkit-text-stroke: 3px #fff;
-  pointer-events: none;
-}
-
-.overlay-undertitle-right {
-  position: absolute;
-  bottom: 2rem;
-  left: 66%;
-  transform: translateX(-50%);
-  z-index: 10;
-  font-size: clamp(1.2rem, 2vw, 2rem);
-  font-weight: 800;
-  color: #1f6a46;
-  -webkit-text-stroke: 2px #fff;
-  pointer-events: none;
-}
-
+/* KNAP – samme style som før, bare uden position */
 .overlay-btn {
-  position: absolute;
-  top: 510px;
-  transform: translateX(-50%);
-  z-index: 10;
+  display: inline-block;
   padding: 0.4rem 1.1rem;
   border-radius: 999px;
-  background-color: #1f6a46;  /* samme orange som på andre knapper */
+  background-color: #1f6a46;
   color: #fff;
   font-family: "Poppins", sans-serif;
   font-size: 0.8rem;
@@ -117,17 +96,7 @@
   background-color: #184831;
 }
 
-/* venstre / højre placering */
-.overlay-btn-left {
-  left: 9%;
-}
-
-.overlay-btn-right {
-  left: 60%;
-}
-
-
-/* mobil: de to kolonner under hinanden */
+/* mobil: de to kolonner under hinanden, tekst midtfor */
 @media (max-width: 800px) {
   .split-slider {
     flex-direction: column;
@@ -137,12 +106,9 @@
     height: 50vh;
   }
 
-  .overlay-title,
-  .overlay-undertitle,
-  .overlay-title-right,
-  .overlay-undertitle-right {
+  .overlay-group {
     left: 50%;
-    transform: translateX(-50%);
+    bottom: 2rem;
     text-align: center;
   }
 }

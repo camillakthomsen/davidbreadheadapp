@@ -1,7 +1,5 @@
 // NavBar.js
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import basket from "../pictures/basket.png";
 import StaggeredMenu from "../components/StaggeredMenu";
 import "./../App.css";
 

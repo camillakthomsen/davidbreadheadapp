@@ -54,17 +54,24 @@ export default function Home() {
   return (
     <main className="split-slider-page">
       <section className="split-slider">
-        {/* Tekster ovenpå – samme style i begge sider */}
-        <h1 className="overlay-title">Baking Studio</h1>
-            <h2 className="overlay-undertitle">J. M. Mørks gade 7 kl. th</h2>
-            <Link to="/menumorksgade" className="overlay-btn overlay-btn-left">Menu</Link>
-            
-
-        <h1 className="overlay-title-right">Baking / Café</h1>
-            <h2 className="overlay-undertitle-right">Ny Munkegade 4B</h2>
-            <Link to="/menunymunke" className="overlay-btn overlay-btn-right">
+        {/* Venstre tekstblok */}
+        <div className="overlay-group overlay-group-left">
+          <h1 className="overlay-title">Baking Studio</h1>
+          <h2 className="overlay-undertitle">J. M. Mørks gade 7 kl. th</h2>
+            <Link to="/menumorksgade" className="overlay-btn">
               Menu
             </Link>
+        </div>
+
+        {/* Højre tekstblok */}
+        <div className="overlay-group overlay-group-right">
+          <h1 className="overlay-title">Baking / Café</h1>
+          <h2 className="overlay-undertitle">Ny Munkegade 4B</h2>
+          <Link to="/menunymunke" className="overlay-btn">
+            Menu
+          </Link>
+        </div>
+
 
 
         {/* Venstre kolonne */}
