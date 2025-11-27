@@ -10,10 +10,10 @@ export default function NavBar() {
 
   const items = [
     { label: "Home", link: "/" },
-    { label: "Menu", link: "/menu" },
     { label: "Bakery2Business", link: "/bakery2business" },
     { label: "Running", link: "/running" },
     { label: "Sourdough", link: "/surdejskursus" },
+    { label: "History", link: "/historie" },
   ];
 
   return (

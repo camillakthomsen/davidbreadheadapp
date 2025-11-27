@@ -12,6 +12,7 @@ import Surdejskursus from "./components/Surdejskursus";
 import MenuMG from "./components/Menu_MorksGade";
 import MenuNM from "./components/Menu_NyMunkegade";
 import Bakery2Business from "./components/Bakery2Business";
+import Historie from "./components/Historie";
 
 export default function App() {
   return (
@@ -31,6 +32,7 @@ export default function App() {
         <Route path="/location" element={<Location />} />
         <Route path="/running" element={<Running />} />
         <Route path="/surdejskursus" element={<Surdejskursus />} />
+        <Route path="/historie" element={<Historie />} />
       </Routes>
     </Router>
   );
