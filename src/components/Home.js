@@ -2,7 +2,6 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "../style/Home.css";
-import Footer from "./Footer";
 
 // IMPORTER DINE BILLEDER HER
 import Img1 from "../pictures/DS1.webp";
@@ -24,32 +23,32 @@ export default function Home() {
   const rightRef = useRef(null);
 
   useEffect(() => {
-    // forskellig fart til hver kolonne
-    const speedLeft = 0.4;
-    const speedRight = 0.5;
-    const intervalMs = 25;
+  const speedLeft = 0.4;
+  const speedRight = 0.5;
+  const intervalMs = 25;
 
-    const id = setInterval(() => {
-      const l = leftRef.current;
-      const r = rightRef.current;
+  const id = setInterval(() => {
+    const l = leftRef.current;
+    const r = rightRef.current;
 
-      if (l) {
-        l.scrollTop += speedLeft;
-        if (l.scrollTop >= l.scrollHeight - l.clientHeight - 1) {
-          l.scrollTop = 0;
-        }
+    if (l) {
+      const maxScrollL = l.scrollHeight - l.clientHeight;
+      if (maxScrollL > 0) {
+        l.scrollTop = (l.scrollTop + speedLeft) % maxScrollL;
       }
+    }
 
-      if (r) {
-        r.scrollTop += speedRight;
-        if (r.scrollTop >= r.scrollHeight - r.clientHeight - 1) {
-          r.scrollTop = 0;
-        }
+    if (r) {
+      const maxScrollR = r.scrollHeight - r.clientHeight;
+      if (maxScrollR > 0) {
+        r.scrollTop = (r.scrollTop + speedRight) % maxScrollR;
       }
-    }, intervalMs);
+    }
+  }, intervalMs);
 
-    return () => clearInterval(id);
-  }, []);
+  return () => clearInterval(id);
+}, []);
+
 
   return (
     <main className="split-slider-page">
@@ -78,7 +77,7 @@ export default function Home() {
         <div className="column-slider" ref={leftRef}>
           {leftImages.map((src, index) => (
             <div className="slide" key={index}>
-              <img src={src} alt={`Left ${index + 1}`} loading="lazy" />
+              <img src={src} alt={`Left ${index + 1}`} />
             </div>
 
           ))}
@@ -93,8 +92,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-
-      <Footer />
     </main>
   );
 }
