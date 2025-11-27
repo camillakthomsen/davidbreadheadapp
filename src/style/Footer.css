@@ -1,10 +1,10 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  background: white;
+  background: transparent;
   font-size: 0.8rem;
   padding: 2rem 3rem;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid rgba(255, 255, 255, 0.3); /* evt. hvid streg */
   font-family: "Poppins", sans-serif;
 }
 
@@ -17,8 +17,16 @@
   text-align: right;
 }
 
+.footer h4{
+  color: white; 
+}
+
+.footer p{
+  color: white; 
+}
+
 .footer-right a {
-  color: #000000;              /* sort tekst */
+  color: white;              /* sort tekst */
   text-decoration: none;    /* fjern streg under */
   display: block;        /* 👈 gør hvert link til en blok (ny linje) */
   margin: 0.25rem 0;

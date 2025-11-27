@@ -74,6 +74,7 @@
 .nav-right {
   display: flex;
   align-items: center;
+  color: white;
 }
 
 .nav-logo {
@@ -108,7 +109,7 @@
 .burger-line {
   width: 80%;
   height: 2px;
-  background: #030303;
+  background: #ffffff;
 }
 
 .burger-close {

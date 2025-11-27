@@ -1,21 +1,21 @@
-import almondcroissant_1 from "../pictures/almondcrossaint.png";
-import almondcroissant_2 from "../pictures/almondcrossaint1.png";
-import brunsviger_1 from "../pictures/brunsvigercroissant.png";
-import brunsviger_2 from "../pictures/brunsvigercroissant1.png";
-import cardemomme_1 from "../pictures/cardemommebun.png";
-import cardemomme_2 from "../pictures/cardemommebun1.png";
-import drommekage_1 from "../pictures/drommekage.png";
-import drommekage_2 from "../pictures/drommekage1.png";
-import monkeybread_1 from "../pictures/monkeybread.png";
-import monkeybread_2 from "../pictures/monkeybread1.png";
-import pain_1 from "../pictures/painachocolate1.png";
-import pain_2 from "../pictures/painachocolate2.png";
-import vaniljespandauer_1 from "../pictures/vaniljespandauer1.png";
-import vaniljespandauer_2 from "../pictures/vaniljespandauer.png";
+import almondcroissant_1 from "../pictures/almondcrossaint.webp";
+import almondcroissant_2 from "../pictures/almondcrossaint1.webp";
+import brunsviger_1 from "../pictures/brunsvigercroissant.webp";
+import brunsviger_2 from "../pictures/brunsvigercroissant1.webp";
+import cardemomme_1 from "../pictures/cardemommebun.webp";
+import cardemomme_2 from "../pictures/cardemommebun1.webp";
+import drommekage_1 from "../pictures/drommekage.webp";
+import drommekage_2 from "../pictures/drommekage1.webp";
+import monkeybread_1 from "../pictures/monkeybread.webp";
+import monkeybread_2 from "../pictures/monkeybread1.webp";
+import pain_1 from "../pictures/painachocolate1.webp";
+import pain_2 from "../pictures/painachocolate2.webp";
+import vaniljespandauer_1 from "../pictures/vaniljespandauer1.webp";
+import vaniljespandauer_2 from "../pictures/vaniljespandauer.webp";
 import Footer from "./Footer";
 import "../style/Menu.css";
 
-export default function Menu() {
+export default function Menu_MorksGade() {
   const items = [
     { src: almondcroissant_1, hoverSrc: almondcroissant_2, caption: "Mandel croissant", price: "42,-" },
     { src: brunsviger_1, hoverSrc: brunsviger_2, caption: "Brunsviger croissant", price: "40,-" },

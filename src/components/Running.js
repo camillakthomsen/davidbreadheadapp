@@ -22,6 +22,7 @@ export default function Running() {
             <strong>Hvor:</strong> DavidBreadHead, Ny Munkegade 4B<br />
             <strong>Pace:</strong> ca. 5:30–5:40 min/km<br />
             <strong>Distance:</strong> 6–7 km<br />
+            Hver tirsdag – ingen tilmelding, bare mød op.
           </p>
         </div>
         <p></p>
@@ -43,6 +44,19 @@ export default function Running() {
                     <img src={instagram} alt="Instagram" className="instagram-photo" />
           </a>
         </div>
+
+        <div className="running-video-wrapper">
+  <video
+    className="running-video"
+    autoPlay
+    muted
+    loop
+    playsInline
+  >
+    <source src="/videos/running-bg.webm" type="video/webm" />
+  </video>
+</div>
+
       </section>
 
     <Footer/>

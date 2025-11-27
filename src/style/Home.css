@@ -96,6 +96,37 @@
   pointer-events: none;
 }
 
+.overlay-btn {
+  position: absolute;
+  top: 510px;
+  transform: translateX(-50%);
+  z-index: 10;
+  padding: 0.4rem 1.1rem;
+  border-radius: 999px;
+  background-color: #1f6a46;  /* samme orange som på andre knapper */
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.overlay-btn:hover {
+  background-color: #184831;
+}
+
+/* venstre / højre placering */
+.overlay-btn-left {
+  left: 9%;
+}
+
+.overlay-btn-right {
+  left: 60%;
+}
+
+
 /* mobil: de to kolonner under hinanden */
 @media (max-width: 800px) {
   .split-slider {

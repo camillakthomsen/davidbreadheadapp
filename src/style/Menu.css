@@ -1,14 +1,14 @@
 /* Font til tavlen */
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand:wght@400&display=swap');
 
-.delivery-page { background:#fff; }
+.delivery-page { background:#a52121; margin-top: -4rem; }
 
 /* ===== MENU BOARD ===== */
 .menu-wrap {
   display: flex;
   justify-content: center;
   padding: 0rem 0rem 1rem;
-  margin-top: -6rem;
+  margin-top: 1rem;
 }
 
 .menu-board {

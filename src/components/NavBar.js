@@ -13,7 +13,7 @@ export default function NavBar() {
   const items = [
     { label: "Home", link: "/" },
     { label: "Menu", link: "/menu" },
-    { label: "Coffee", link: "/coffee" },
+    { label: "Bakery2Business", link: "/bakery2business" },
     { label: "Running", link: "/running" },
     { label: "Sourdough", link: "/surdejskursus" },
   ];
@@ -41,9 +41,7 @@ export default function NavBar() {
 
       {/* Højre: kurv */}
       <div className="nav-right">
-        <Link to="/delivery" className="cart-icon">
-          <img src={basket} alt="Indkøbskurv" />
-        </Link>
+        <p>davidbreadhead@gmail.com</p>
       </div>
 
       {/* VENSTRE drawer */}

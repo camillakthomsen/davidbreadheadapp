@@ -1,5 +1,5 @@
-import bakingStudio from "../pictures/bakingstudio.png";
-import bakery from "../pictures/bakery.png";
+import bakingStudio from "../pictures/bakingstudio.webp";
+import bakery from "../pictures/bakery.webp";
 import Footer from "../components/Footer";
 import "../style/Location.css";
 

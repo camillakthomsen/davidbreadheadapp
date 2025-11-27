@@ -1,0 +1,61 @@
+.coffee-page {
+  background-image: url("../pictures/bakery2business.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin-top: -4rem;
+}
+
+/* Sektionen */
+.coffee-section {
+  max-width: 800px;
+  margin: 0 auto 4rem auto;
+  text-align: center;
+}
+
+/* Overskrift */
+.coffee-title {
+  font-family: "Playfair Display", serif;
+  color: #1f6a46;
+  font-size: 3rem;
+  margin-top: 9rem;
+  margin-bottom: 1rem;
+}
+
+.business-card {
+  display: flex;
+  align-items: center;
+  background-color: #27241e;
+  border-radius: 16px;
+  padding: 1rem 1.4rem;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04);
+  margin-bottom: 1.5rem;
+  color: #d26a2a;
+}
+
+.jobs-email {
+  font-weight: 600;
+  color: #1f6a46;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.jobs-email:hover {
+  color: #bf602c;
+}
+
+/* Responsiv */
+@media (max-width: 768px) {
+  .coffee-image {
+    width: 90%;
+  }
+
+  .coffee-title {
+    font-size: 1.5rem;
+  }
+
+  .coffee-text {
+    font-size: 0.9rem;
+  }
+}

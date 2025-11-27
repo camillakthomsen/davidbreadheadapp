@@ -1,5 +1,6 @@
 // src/pages/Home.js
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import "../style/Home.css";
 import Footer from "./Footer";
 
@@ -11,9 +12,9 @@ import Img5 from "../pictures/DS5.webp";
 import Img6 from "../pictures/DS6.webp";
 import Img7 from "../pictures/DS7.webp";
 import Img8 from "../pictures/DS9.webp";
-import Img10 from "../pictures/DS10.jpg";
-import Img11 from "../pictures/IMG11.jpg";
-import Img12 from "../pictures/bakingstudio.png";
+import Img10 from "../pictures/DS10.webp";
+import Img11 from "../pictures/IMG11.webp";
+import Img12 from "../pictures/bakingstudio.webp";
 
 export default function Home() {
   const leftImages = [Img12, Img5, Img7, Img8, Img1, Img12, Img5, Img7, Img8, Img1];
@@ -55,10 +56,16 @@ export default function Home() {
       <section className="split-slider">
         {/* Tekster ovenpå – samme style i begge sider */}
         <h1 className="overlay-title">Baking Studio</h1>
-        <h2 className="overlay-undertitle">J. M. Mørks gade 7 kl. th</h2>
+            <h2 className="overlay-undertitle">J. M. Mørks gade 7 kl. th</h2>
+            <Link to="/menumorksgade" className="overlay-btn overlay-btn-left">Menu</Link>
+            
 
         <h1 className="overlay-title-right">Baking / Café</h1>
-        <h2 className="overlay-undertitle-right">Ny Munkegade 4B</h2>
+            <h2 className="overlay-undertitle-right">Ny Munkegade 4B</h2>
+            <Link to="/menunymunke" className="overlay-btn overlay-btn-right">
+              Menu
+            </Link>
+
 
         {/* Venstre kolonne */}
         <div className="column-slider" ref={leftRef}>
