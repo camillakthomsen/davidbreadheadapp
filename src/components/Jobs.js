@@ -1,4 +1,3 @@
-import Footer from "../components/Footer";
 import "../style/Jobs.css";
 
 function Jobs() {
@@ -46,7 +45,6 @@ You will be responsible for developing a strong social media strategy and execut
         </div>
       </div>
     </section>
-    <Footer />
     </main>
   );
 }

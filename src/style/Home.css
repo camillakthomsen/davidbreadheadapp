@@ -118,7 +118,7 @@
 
   /* FÆLLES mobil-justering: mindre tekst */
   .overlay-title {
-    font-size: 2rem; /* mindre titel */
+    font-size: 1.5rem; /* mindre titel */
     -webkit-text-stroke: 2px #fff;
   }
 
