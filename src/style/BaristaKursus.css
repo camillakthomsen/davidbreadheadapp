@@ -1,0 +1,98 @@
+/* BAGGRUND */
+.barista-page {
+  background-image: url("../pictures/baristakursus.webp");
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin-top: -4rem;
+}
+
+/* LAYOUT: TEKST VENSTRE + BOKS HØJRE */
+.barista-hero {
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 4rem;
+  padding: 2rem 1.5rem 3rem;
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  margin-bottom: 20rem;
+}
+
+/* VENSTRE KOLONNE */
+.barista-text {
+  flex: 1;
+  font-family: "Poppins", sans-serif;
+}
+
+.barista-text h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.4rem;
+  letter-spacing: 0.08em;
+  color: #197c52;
+  margin-top: 2rem;
+}
+
+.barista-text p {
+  margin: 0 0 0.75rem;
+  line-height: 1;
+  color: #bf602c;
+}
+
+/* BLUR/TRANSPARENT TEKSTBOKS */
+.barista-textbox {
+  background-color: #27241e;
+  border-radius: 16px;
+  padding: 1.4rem 1.6rem;
+}
+
+
+/* LISTE */
+.barista-list {
+  margin: 0.3rem 0 1rem;
+  padding-left: 1rem;
+  font-size: 0.90rem;
+  line-height: 1.5;
+  color: #bf602c;
+}
+
+.barista-list li {
+  margin-bottom: 0.2rem;
+}
+
+/* HØJRE KOLONNE: INFOBOKS */
+.barista-next {
+  width: 300px;
+  flex-shrink: 0;
+  margin-top: 7rem;
+}
+
+.course-card {
+  display: flex;
+  align-items: center;
+  background-color: #27241e;
+  border-radius: 16px;
+  padding: 1rem 1.4rem;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04);
+  margin-bottom: 1.5rem;
+  font-size: 0.90rem;
+  color: #d26a2a;
+}
+
+.course-main {
+  flex: 1;
+}
+
+/* MOBIL */
+@media (max-width: 768px) {
+  .barista-hero {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .barista-next {
+    width: 100%;
+    margin-top: 0;
+  }
+}

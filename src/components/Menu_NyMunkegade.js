@@ -12,6 +12,8 @@ import pain_1 from "../pictures/painachocolate1.webp";
 import pain_2 from "../pictures/painachocolate2.webp";
 import vaniljespandauer_1 from "../pictures/vaniljespandauer1.webp";
 import vaniljespandauer_2 from "../pictures/vaniljespandauer.webp";
+import kanelsnegl_1 from "../pictures/kanelsnegl.webp";
+import kanelsnegl_2 from "../pictures/kanelsnegl1.webp";
 import Footer from "./Footer";
 import "../style/Menu.css";
 
@@ -24,6 +26,7 @@ export default function Menu_MorksGade() {
     { src: monkeybread_1, hoverSrc: monkeybread_2, caption: "Monkey bread", price: "38,-" },
     { src: pain_1, hoverSrc: pain_2, caption: "Pain au chocolat", price: "42,-" },
     { src: vaniljespandauer_1, hoverSrc: vaniljespandauer_2, caption: "Vanilje spandauer", price: "38,-" },
+    { src: kanelsnegl_2, hoverSrc: kanelsnegl_1, caption: "Kanelsnegl", price: "38,-" },
   ];
 
   return (

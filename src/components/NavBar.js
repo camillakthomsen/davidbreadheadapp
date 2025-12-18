@@ -11,6 +11,7 @@ export default function NavBar() {
   const items = [
     { label: "Home", link: "/" },
     { label: "Bakery2Business", link: "/bakery2business" },
+    { label: "Barista course", link: "baristakursus"},
     { label: "Running", link: "/running" },
     { label: "Sourdough", link: "/surdejskursus" },
     { label: "History", link: "/historie" },

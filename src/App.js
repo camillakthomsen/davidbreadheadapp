@@ -13,6 +13,7 @@ import MenuMG from "./components/Menu_MorksGade";
 import MenuNM from "./components/Menu_NyMunkegade";
 import Bakery2Business from "./components/Bakery2Business";
 import Historie from "./components/Historie";
+import BaristaKursus from "./components/BaristaKursus";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/bakery2business" element={<Bakery2Business />} />
+        <Route path="/baristakursus" element={<BaristaKursus />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/menumorksgade" element={<MenuMG />} />
         <Route path="/menunymunke" element={<MenuNM />} />

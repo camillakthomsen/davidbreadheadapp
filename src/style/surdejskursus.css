@@ -1,4 +1,6 @@
-/* BAGGRUND */
+/* =========================
+   BAGGRUND
+========================= */
 .sourdough-page {
   background-image: url("../pictures/surdejskursus.webp");
   background-size: cover;
@@ -8,18 +10,21 @@
   margin-top: -4rem;
 }
 
-/* LAYOUT: TEKST VENSTRE + BOKS HØJRE */
+/* =========================
+   LAYOUT: TEKST VENSTRE + BOKS HØJRE
+========================= */
 .sourdough-hero {
   max-width: 1100px;
-  margin: 0 auto;
-  margin-top: 4rem;
+  margin: 4rem auto 0;
   padding: 2rem 1.5rem 3rem;
   display: flex;
-  gap: 3rem;
+  gap: 7rem;
   align-items: flex-start;
 }
 
-/* VENSTRE KOLONNE */
+/* =========================
+   VENSTRE KOLONNE
+========================= */
 .sourdough-text {
   flex: 1;
   font-family: "Poppins", sans-serif;
@@ -29,33 +34,64 @@
   font-family: "Playfair Display", serif;
   font-size: 2.4rem;
   letter-spacing: 0.08em;
-  color: #197c52;           /* samme grøn som logoet */
+  color: #197c52;
   margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
-.sourdough-text p {
-  margin: 0 0 0.75rem;
-  line-height: 1.6;
+/* GLASS / TEKSTBOKS VENSTRE */
+.sourdough-textbox {
+  background-color: #27241e;
+  border-radius: 16px;
+  padding: 1.4rem 1.6rem;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+  margin-bottom: 15rem;
+}
+
+/* Tekststørrelse i venstre boks */
+.sourdough-textbox p,
+.sourdough-textbox .sourdough-subtitle,
+.sourdough-textbox .sourdough-list {
+  font-size: 0.9rem;
   color: #d26a2a;
 }
 
-.sourdough-list ul {
-  margin: 0.3rem 0 0.75rem;
-  padding-left: 1.2rem;
+.sourdough-textbox p {
+  margin: 0 0 0.9rem;
+  line-height: 1;
+}
+
+.sourdough-subtitle {
+  margin: 0.8rem 0 0.4rem;
+  color: #d26a2a;
+}
+
+.sourdough-list {
+  margin: 0.3rem 0 1rem;
+  padding-left: 1rem;
+  font-size: 0.90rem;
+  line-height: 1.5;
+  color: #bf602c;
 }
 
 .sourdough-list li {
   margin-bottom: 0.2rem;
 }
 
-/* HØJRE KOLONNE: NÆSTE KURSUS BOKS */
+/* =========================
+   HØJRE KOLONNE: INFOBOKS
+========================= */
 .sourdough-next {
   width: 300px;
   flex-shrink: 0;
-  margin-top: 7rem;
+  margin-top: 0;
 }
 
-/* KURSUSKORT */
+.sourdough-right {
+  padding-top: 6.25rem; /* justér evt. 3.2-4.2rem til det flugter perfekt */
+}
+
+
 .course-card {
   display: flex;
   align-items: center;
@@ -71,18 +107,9 @@
   flex: 1;
 }
 
-/* “DET FÅR DU” LISTE */
-.sourdough-subtitle {
-  color: #d26a2a;
-}
-.sourdough-list {
-  margin: 0 0 0rem;
-  font-size: 0.95rem;
-  line-height: 2;
-  color: #d26a2a;
-}
-
-/* KNAPPER */
+/* =========================
+   KNAPPER
+========================= */
 .sourdough-actions {
   display: flex;
   flex-wrap: wrap;
@@ -93,7 +120,7 @@
   display: inline-block;
   padding: 0.7rem 1.6rem;
   border-radius: 999px;
-  background-color: #a74b23;  /* ORANGE */
+  background-color: #a74b23;
   color: #fff;
   text-decoration: none;
   font-size: 0.95rem;
@@ -104,7 +131,9 @@
   background-color: #692c12;
 }
 
-/* MOBIL */
+/* =========================
+   MOBIL
+========================= */
 @media (max-width: 768px) {
   .sourdough-hero {
     flex-direction: column;
@@ -113,5 +142,6 @@
 
   .sourdough-next {
     width: 100%;
+    margin-top: 0; /* giver mening på mobil */
   }
 }

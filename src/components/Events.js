@@ -1,4 +1,3 @@
-import Footer from "../components/Footer";
 import "../style/Events.css";
 
 function Events() {
@@ -32,11 +31,19 @@ function Events() {
               <h2 className="event-title">Sourdough course</h2>
             </div>
           </article>
+
+          <article className="event-card">
+            <div className="event-date">
+              <span className="event-month">JAN</span>
+              <span className="event-day">20</span>
+            </div>
+            <div className="event-main">
+              <h2 className="event-title">Barista course</h2>
+            </div>
+          </article>
         </div>
       </div>
     </section>
-
-    <Footer />
     </main>
   );
 }
