@@ -10,30 +10,29 @@ export default function BaristaKursus() {
 <div className="barista-text">
 
   {/* OVERSKRIFT UDENFOR BOKS */}
-  <h1>Barista Kursus</h1>
+  <h1>Barista Course</h1>
 
   {/* BLUR/TRANSPARENT BOKS */}
   <div className="barista-textbox">
     <p>
-      Et kursus i selskab med Cecilie, der vil tage jer igennem en hyggelig aften i kaffens tegn.
+      A course in the company of Cecilie, who will guide you through a cozy evening dedicated to coffee.
       <br /><br />
-      Kurset byder på:
+      The course includes:
     </p>
 
     <ul className="barista-list">
-      <li>En smagning af kaffe brygget på forskellige bønner.</li>
+      <li>A tasting of coffee brewed with different beans.</li>
       <li>
-        En grundig gennemgang af brygning af espresso – forstå hvordan du justerer espressoen
-        for at opnå den bedste smagsoplevelse.
+          A thorough introduction to brewing espresso – learn how to adjust your espresso to achieve the best flavor experience.
       </li>
       <li>
-        Mælkeworkshop – hvordan steamer du den bedste mælk og opnår den helt rette tekstur og temperatur.
+          Milk workshop – how to steam milk perfectly and achieve the right texture and temperature.
       </li>
-      <li>Hældeteknik og latte art</li>
+      <li>Pouring technique and latte art</li>
     </ul>
 
     <p>
-      Kurset er for alle – især ideelt for nybegyndere som ønsker at tage viden og erfaring med hjem.
+      The course is for everyone – especially ideal for beginners who want to take knowledge and hands-on experience home.
     </p>
   </div>
 </div>
@@ -45,13 +44,13 @@ export default function BaristaKursus() {
           <section className="barista-next">
             <article className="course-card">
               <div className="course-main">
-                <p>Pris: 450 kr.</p>
-                <p>Tid: Ca. 2 timer</p>
-                <p>Sted: Ny Munkegade 4b</p>
+                <p>Price: DKK 450</p>
+                <p>Duration: approx. 2 hours</p>
+                <p>Location: Ny Munkegade 4B</p>
 
                 <br />
-                <p><strong>Dato:</strong> 20 januar kl. 19</p>
-                <p><strong>Tilmelding:</strong> Cecilie.breadhead@gmail.com</p>
+                <p><strong>Date:</strong> 20 January at 7:00 PM</p>
+                <p><strong>Sign-up:</strong> Cecilie.breadhead@gmail.com</p>
               </div>
             </article>
           </section>

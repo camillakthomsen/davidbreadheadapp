@@ -10,38 +10,38 @@ export default function Surdejskursus() {
 <div className="sourdough-text">
 
   {/* OVERSKRIFT UDENFOR BOKS */}
-  <h1>Surdejskursus</h1>
+  <h1>Sourdough Course</h1>
 
   {/* BLUR / GLASS BOKS */}
   <div className="sourdough-textbox">
 
     <p>
-      En hyggelig aften i selskab med David Milberg, ejeren af DavidBreadHead.
+      A cozy evening in the company of David Milberg, the owner of DavidBreadHead.
       <br /><br />
-      Vil du lære at mestre det perfekte brød, rulle de smukkeste croissanter?
+      Do you want to learn how to master the perfect loaf and roll the most beautiful croissants?
       <br /><br />
-      Så er vores kursus lige noget for dig.
+      Then this course is perfect for you.
     </p>
 
-    <h2 className="sourdough-subtitle">Hvad lærer du:</h2>
+    <h2 className="sourdough-subtitle">What will you learn:</h2>
     <ul className="sourdough-list">
-      <li>Teori</li>
-      <li>Dejhåndtering</li>
-      <li>Hvad skal man gøre hvis det går galt?</li>
-      <li>Du laver din egen dej fra bunden</li>
-      <li>Du lærer at shape brød</li>
-      <li>Solde – og hvordan</li>
+      <li>Theory</li>
+      <li>Dough handling</li>
+      <li>What to do if something goes wrong</li>
+      <li>You will make your own dough from scratch</li>
+      <li>You will learn how to shape bread</li>
+      <li>Scoring – and how to do it</li>
     </ul>
 
-    <h2 className="sourdough-subtitle">Hvad får du?</h2>
+    <h2 className="sourdough-subtitle">What do you get?</h2>
     <ul className="sourdough-list">
-      <li>Eget brød med hjem</li>
-      <li>Kurv</li>
-      <li>Opskriftbog</li>
-      <li>Croissanter du selv skal bage</li>
-      <li>Let aftensmad</li>
-      <li>Læring</li>
-      <li>En hyggelig aften</li>
+      <li>Your own bread to take home</li>
+      <li>Banneton basket</li>
+      <li>Recipe booklet</li>
+      <li>Croissants to bake at home</li>
+      <li>A light dinner</li>
+      <li>Learning</li>
+      <li>A cozy evening</li>
     </ul>
 
   </div>
@@ -54,11 +54,15 @@ export default function Surdejskursus() {
           <section className="sourdough-next">
             <article className="course-card">
               <div className="course-main">
-                <p>Pris: 1.100 kr.</p>
-                <p>Tid: ca. 3 timer</p>
-                <p>Sted: Ny Munkegade 4B, Aarhus C</p>
-                <p>Kl. 17</p>
-                <p>Medbring forklæde</p>
+                <p>Price: DKK 1,100</p>
+                <p>Duration: approx. 3 hours</p>
+                <p>Location: Ny Munkegade 4B, Aarhus C</p>
+                <p>Time: 5:00 PM</p>
+                <p>Please bring an apron</p>
+
+                <br />
+                <p><strong>Date:</strong> 23 February</p>
+                <p><strong>Sign-up:</strong> DavidBreadHead@gmail.com </p>
               </div>
             </article>
           </section>
@@ -69,7 +73,7 @@ export default function Surdejskursus() {
               download
               className="secondary-btn"
             >
-              Download opskrift
+              Download recipe
             </a>
           </div>
         </div>

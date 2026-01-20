@@ -13,7 +13,7 @@ export default function NavBar() {
     { label: "Bakery2Business", link: "/bakery2business" },
     { label: "Barista course", link: "baristakursus"},
     { label: "Running", link: "/running" },
-    { label: "Sourdough", link: "/surdejskursus" },
+    { label: "Sourdough course", link: "/surdejskursus" },
     { label: "History", link: "/historie" },
   ];
 

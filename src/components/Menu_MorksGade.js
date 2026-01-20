@@ -14,19 +14,25 @@ import vaniljespandauer_1 from "../pictures/vaniljespandauer1.webp";
 import vaniljespandauer_2 from "../pictures/vaniljespandauer.webp";
 import kanelsnegl_1 from "../pictures/kanelsnegl.webp";
 import kanelsnegl_2 from "../pictures/kanelsnegl1.webp";
+import fastalavnsbollesalt_1 from "../pictures/fastesalt.webp";
+import fastalavnsbollesalt_2 from "../pictures/fastesalt1.webp";
+import fastalavnsbollenut_1 from "../pictures/fastenut.webp";
+import fastalavnsbollenut_2 from "../pictures/fastenut1.webp";
 import Footer from "./Footer";
 import "../style/Menu.css";
 
 export default function Menu_MorksGade() {
   const items = [
-    { src: almondcroissant_1, hoverSrc: almondcroissant_2, caption: "Mandel croissant", price: "42,-" },
+    { src: fastalavnsbollesalt_1, hoverSrc: fastalavnsbollesalt_2, caption: "Vanilla diplomat cream with chocolate ganache", price: "40,-"},
+    { src: fastalavnsbollenut_2, hoverSrc: fastalavnsbollenut_1, caption: "Coffee diplomat cream and chocolate ganache and hazelnuts", price: "40,-"},
+    { src: almondcroissant_1, hoverSrc: almondcroissant_2, caption: "Almond croissant", price: "42,-" },
     { src: brunsviger_1, hoverSrc: brunsviger_2, caption: "Brunsviger croissant", price: "40,-" },
-    { src: cardemomme_1, hoverSrc: cardemomme_2, caption: "Kademommesnurrer", price: "38,-" },
-    { src: drommekage_1, hoverSrc: drommekage_2, caption: "Drømmekage snegl", price: "38,-" },
+    { src: cardemomme_1, hoverSrc: cardemomme_2, caption: "Cardemom bun", price: "38,-" },
+    { src: drommekage_1, hoverSrc: drommekage_2, caption: "Drømmekage Rolls", price: "38,-" },
     { src: monkeybread_1, hoverSrc: monkeybread_2, caption: "Monkey bread", price: "38,-" },
     { src: pain_1, hoverSrc: pain_2, caption: "Pain au chocolat", price: "42,-" },
-    { src: vaniljespandauer_1, hoverSrc: vaniljespandauer_2, caption: "Vanilje spandauer", price: "38,-" },
-    { src: kanelsnegl_2, hoverSrc: kanelsnegl_1, caption: "Kanelsnegl", price: "38,-" },
+    { src: vaniljespandauer_1, hoverSrc: vaniljespandauer_2, caption: "Vanilla custard Danish", price: "38,-" },
+    { src: kanelsnegl_2, hoverSrc: kanelsnegl_1, caption: "Cinnamon bun", price: "38,-" },
   ];
 
   return (
@@ -42,17 +48,17 @@ export default function Menu_MorksGade() {
               <li><span className="label">Aros Loaf</span><span className="price">55,-</span></li>
               <li><span className="label">Sesam Loaf</span><span className="price">55,-</span></li>
               <li><span></span></li>
-              <li><span className="label">Surdejsbolle</span><span className="price">16,-</span></li>
-              <li><span className="label">4 × Surdejsbolle</span><span className="price">55,-</span></li>
-              <li><span className="label">Rugbrød</span><span className="price">35,-</span></li>
+              <li><span className="label">Sourdough bun</span><span className="price">16,-</span></li>
+              <li><span className="label">4 × Sourdough bun</span><span className="price">55,-</span></li>
+              <li><span className="label">Rye bread</span><span className="price">35,-</span></li>
               <li><span></span></li>
-              <li><span className="label">Mandags combo-</span><span className="price"></span></li>
+              <li><span className="label">Monday combo-</span><span className="price"></span></li>
               <li><span className="label">BMO + Batch Brew</span><span className="price">45,-</span></li>
-              <li><span className="label">(Gælder til kl. 12)</span><span className="price"></span></li>
+              <li><span className="label">(Until 12:00)</span><span className="price"></span></li>
               <li><span></span></li>
               <li><span className="label">BMO</span><span className="price">35,-</span></li>
-              <li><span className="label">BMO-kort</span><span className="price">145,-</span></li>
-              <li><span className="label">BMO+kaffe-kort</span><span className="price">295,-</span></li>
+              <li><span className="label">BMO-card</span><span className="price">145,-</span></li>
+              <li><span className="label">BMO+coffee-card</span><span className="price">295,-</span></li>
               <li className="sep" aria-hidden="true"></li>
             </ul>
 
@@ -65,8 +71,8 @@ export default function Menu_MorksGade() {
               <li><span className="label">Cappuccino</span><span className="price">42,-</span></li>
               <li><span className="label">Flat White</span><span className="price">42,-</span></li>
               <li><span className="label">Cortado</span><span className="price">42,-</span></li>
-              <li><span className="label">Islatte</span><span className="price">48,-</span></li>
-              <li><span className="label">Varm choco</span><span className="price">42,-</span></li>
+              <li><span className="label">Ice latte</span><span className="price">48,-</span></li>
+              <li><span className="label">Warm choco</span><span className="price">42,-</span></li>
               <li><span className="label">Te</span><span className="price">30,-</span></li>
               <li><span className="label">Matcha latte/iced</span><span className="price">48,-/51,-</span></li>
               <li><span className="label">Chai</span><span className="price">48,-</span></li>
