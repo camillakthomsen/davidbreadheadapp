@@ -49,7 +49,7 @@ export default function BaristaKursus() {
                 <p>Location: Ny Munkegade 4B</p>
 
                 <br />
-                <p><strong>Date:</strong> 20 January at 7:00 PM</p>
+                <p><strong>Date:</strong> 17 Februay and 24 March at 7:00 PM</p>
                 <p><strong>Sign-up:</strong> Cecilie.breadhead@gmail.com</p>
               </div>
             </article>

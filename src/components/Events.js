@@ -24,8 +24,18 @@ function Events() {
 
           <article className="event-card">
             <div className="event-date">
-              <span className="event-month">NOV</span>
-              <span className="event-day">24</span>
+              <span className="event-month">FEB</span>
+              <span className="event-day">17</span>
+            </div>
+            <div className="event-main">
+              <h2 className="event-title">Barista course</h2>
+            </div>
+          </article>
+
+          <article className="event-card">
+            <div className="event-date">
+              <span className="event-month">FEB</span>
+              <span className="event-day">23</span>
             </div>
             <div className="event-main">
               <h2 className="event-title">Sourdough course</h2>
@@ -34,8 +44,8 @@ function Events() {
 
           <article className="event-card">
             <div className="event-date">
-              <span className="event-month">JAN</span>
-              <span className="event-day">20</span>
+              <span className="event-month">MAR</span>
+              <span className="event-day">24</span>
             </div>
             <div className="event-main">
               <h2 className="event-title">Barista course</h2>
