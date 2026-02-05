@@ -61,7 +61,7 @@ export default function Surdejskursus() {
                 <p>Please bring an apron</p>
 
                 <br />
-                <p><strong>Date:</strong> 23 February</p>
+                <p><strong>Date:</strong> 23 March</p>
                 <p><strong>Sign-up:</strong> DavidBreadHead@gmail.com </p>
               </div>
             </article>

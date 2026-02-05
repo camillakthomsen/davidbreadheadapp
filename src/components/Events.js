@@ -38,6 +38,16 @@ function Events() {
               <span className="event-day">23</span>
             </div>
             <div className="event-main">
+              <h2 className="event-title">Sourdough course (sold out)</h2>
+            </div>
+          </article>
+
+          <article className="event-card">
+            <div className="event-date">
+              <span className="event-month">MAR</span>
+              <span className="event-day">23</span>
+            </div>
+            <div className="event-main">
               <h2 className="event-title">Sourdough course</h2>
             </div>
           </article>

@@ -12,8 +12,9 @@ export default function NavBar() {
     { label: "Home", link: "/" },
     { label: "Bakery2Business", link: "/bakery2business" },
     { label: "Barista course", link: "baristakursus"},
-    { label: "Running", link: "/running" },
     { label: "Sourdough course", link: "/surdejskursus" },
+    { label: "Running", link: "/running" },
+    { label: "Events", link: "/events" },
     { label: "History", link: "/historie" },
   ];
 
