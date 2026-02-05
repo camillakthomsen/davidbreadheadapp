@@ -25,7 +25,7 @@ export default function Home() {
   useEffect(() => {
   const speedLeft = 0.4;
   const speedRight = 0.5;
-  const intervalMs = 25;
+  const intervalMs = 50;
 
   const id = setInterval(() => {
     const l = leftRef.current;
@@ -77,7 +77,7 @@ export default function Home() {
         <div className="column-slider" ref={leftRef}>
           {leftImages.map((src, index) => (
             <div className="slide" key={index}>
-              <img src={src} alt={`Left ${index + 1}`} />
+              <img src={src} alt={`Left ${index + 1}`} loading="lazy" decoding="async" />
             </div>
 
           ))}
@@ -87,7 +87,7 @@ export default function Home() {
         <div className="column-slider" ref={rightRef}>
           {rightImages.map((src, index) => (
             <div className="slide" key={index}>
-              <img src={src} alt={`Right ${index + 1}`} loading="lazy" />
+              <img src={src} alt={`Right ${index + 1}`} loading="lazy" decoding="async" />
             </div>
           ))}
         </div>
