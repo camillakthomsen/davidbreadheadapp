@@ -8,8 +8,8 @@ export default function Contact() {
         <h1 className="contact-title">Contant</h1>
         <div className="contact-apply">
           <p>Contact us at:</p>
-          <a href="mailto:davidbreadhead@gmail.com" className="jobs-email">
-            davidbreadhead@gmail.com
+          <a href="mailto:Breadhead@breadheadbakery.dk" className="jobs-email">
+            Breadhead@breadheadbakery.dk
           </a>
         </div>
       </section>

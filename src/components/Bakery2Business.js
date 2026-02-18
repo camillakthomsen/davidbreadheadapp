@@ -12,7 +12,7 @@ export default function Bakery2Business() {
                 <p>We can deliver freshly baked bread, pastries, and quality coffee directly to your business — easy, fast, and always freshly made. Perfect for meetings, offices, and events.</p>
                 <p>Please send orders to:</p>
                 <a href="mailto:davidbreadhead@gmail.com" className="jobs-email">
-                  davidbreadhead@gmail.com
+                  Breadhead@breadheadbakery.dk
                 </a>
               </div>
             </article>

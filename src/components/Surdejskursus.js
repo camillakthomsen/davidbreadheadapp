@@ -62,7 +62,7 @@ export default function Surdejskursus() {
 
                 <br />
                 <p><strong>Date:</strong> 23 March</p>
-                <p><strong>Sign-up:</strong> DavidBreadHead@gmail.com </p>
+                <p><strong>Sign-up:</strong> Breadhead@breadheadbakery.dk </p>
               </div>
             </article>
           </section>
