@@ -50,7 +50,7 @@ export default function BaristaKursus() {
 
                 <br />
                 <p><strong>Date:</strong> 17 Februay and 24 March at 7:00 PM</p>
-                <p><strong>Sign-up:</strong> Cecilie.breadhead@gmail.com</p>
+                <p><strong>Sign-up:</strong> cn@breadheadbakery.dk</p>
               </div>
             </article>
           </section>
